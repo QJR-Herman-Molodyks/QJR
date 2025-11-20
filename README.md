@@ -9,7 +9,7 @@ Edit Date: 2025-10-27
 
 #### Windows will lose Q-J-R Support soon!
 
-Windows 11 or more will lose Q-J-R System support,
+Windows 11 or higher will lose Q-J-R System support,
 because of problems, that connected with QJR Software!
 
 Last version which is still supported: 5.11.2
