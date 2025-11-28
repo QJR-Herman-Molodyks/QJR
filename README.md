@@ -29,7 +29,8 @@ PROPERTLY!
 ----------------------------------------------------
 |        Newest          | Stable | Last supported |
 |------------------------|--------|----------------|
-| 5.12.0 Public Beta 8   | 5.11.2 |      1.0.0     |
+| 5.12.0 Pre-release 3   |        |                |
+| 5.12.0 Public Beta 10  | 5.11.2 |      1.0.0     |
 | 5.12.0 Developer Beta 7|        |                |
 
 #### Supported on:
