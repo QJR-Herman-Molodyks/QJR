@@ -7,6 +7,13 @@ User Agreement:
 
 Edit Date: 2025-10-27
 
+#### HydroOS v1.0 and QJR System v5.12.0
+
+HydroOS v1.0 and QJR System v5.12.0 Color 
+will be released: 2025-12-01.
+
+---------------------------
+
 #### Windows will lose Q-J-R Support soon!
 
 Windows 11 or higher will lose Q-J-R System support,
