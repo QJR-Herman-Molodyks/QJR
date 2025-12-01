@@ -1,6 +1,8 @@
 # Q-J-R
 Official Q-J-R Open Source repository
 
+
+
 User Agreement:
 1.0. Q-J-R IS AN OPEN SOURCE PRODUCT WITH NO LICENSE!
      ANY DISTRIBUTIONS ALLOWED!!!
@@ -19,14 +21,9 @@ will be released: 2025-12-01.
 Windows 11 or higher will lose Q-J-R System support,
 because of problems, that connected with QJR Software!
 
-Last version which is still supported: 5.11.2
+Last version which is still supported for Windows: 5.11.2 
 
 #### Releases:
-
-Newest: 5.12.0 Public Beta 3
-WARNING! THIS IS A BETA VERSION, SO IT 
-CAN BE VERY UNSTABLE AND NOT WORK 
-PROPERTLY!
 
 5.12.0 - December 2025;
 6.0.0  - January 2026 ;
@@ -34,15 +31,15 @@ PROPERTLY!
 6.2.0  - February 2026;
 
 ----------------------------------------------------
-|        Newest          | Stable | Last supported |
-|------------------------|--------|----------------|
-| 5.12.0 Pre-release 3   |        |                |
-| 5.12.0 Public Beta 10  | 5.11.2 |      1.0.0     |
-| 5.12.0 Developer Beta 7|        |                |
+|   Newest  | Stable | Last supported |
+|-----------|--------|----------------|
+|  5.12.0   | 5.12.0 |      1.0.0     |
 
+
+To run QJR System you need Python 3.7 or higher.
 #### Supported on:
 
-1. macOS (OS X 10.9 or higher)
+1. macOS (OS X 10.7 or higher)
 2. Linux (from source code)
 3. UNIX  (from source code)
 4. iOS   (iOS 11 or higher)
