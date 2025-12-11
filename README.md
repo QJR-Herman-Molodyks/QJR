@@ -45,7 +45,7 @@ To run QJR System you need Python 3.7 or higher.
 4. iOS   (iOS 11 or higher)
 5. Android (Android 9 or higher)
 6. iPadOS (iPadOS 13 or higher) (Lower iPadOS didn't exist, the first iPadOS is 13)
-7. Darwin (15.3.0 or more)
+7. Darwin (15.0.0 or more)
 8. OpenBSD (from source code)
 9. FreeBSD (from source code)
 10. PowerIBM (from source code)
@@ -53,6 +53,12 @@ To run QJR System you need Python 3.7 or higher.
 12. Windows (died, last release: 5.11.2 (2025-11))
 
 #### Release notes:
+
+5.12.7 (2025-12-11)
+
+>> Fixed bug with file properties error
+>> Have made Q-J-R System more alive
+>> Optimized code
 
 5.12.6 (2025-12-10)
 
