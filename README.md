@@ -39,7 +39,7 @@ Last version which is still supported for Windows: 5.11.2
 To run QJR System you need Python 3.7 or higher.
 #### Supported on:
 
-1. macOS (OS X 10.5 or higher)
+1. macOS (OS X 10.4 or higher)
 2. Linux (from source code)
 3. UNIX  (from source code)
 4. iOS   (iOS 11 or higher)
