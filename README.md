@@ -31,9 +31,9 @@ Last version which is still supported for Windows: 5.11.2
 6.2.0  - February 2026;
 
 ----------------------------------------------------
-|   Newest  | Stable | Last supported |
-|-----------|--------|----------------|
-|  5.12.6   | 5.12.6 |      1.0.0     |
+|   Newest  | Stable  | Last supported |
+|-----------|---------|----------------|
+|  5.12.10  | 5.12.10 |     1.0.0      |
 
 
 To run QJR System you need Python 3.7 or higher.
@@ -53,6 +53,21 @@ To run QJR System you need Python 3.7 or higher.
 12. Windows (died, last release: 5.11.2 (2025-11))
 
 #### Release notes:
+
+5.12.10 (2025-12-13)
+
+>> Fixed bug with 'hostname' command
+>> Optimized code
+
+5.12.9 (2025-12-13)
+
+>> Bugfix
+
+5.12.8 (2025-12-12)
+
+>> Updated and upgraded the new notepad (Now file can be edited with multiple strings)
+>> Optimized code
+>> Bugfix
 
 5.12.7 (2025-12-11)
 
