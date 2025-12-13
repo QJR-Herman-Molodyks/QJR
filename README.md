@@ -33,7 +33,7 @@ Last version which is still supported for Windows: 5.11.2
 ----------------------------------------------------
 |   Newest  | Stable  | Last supported |
 |-----------|---------|----------------|
-|  5.12.11  | 5.12.11 |     1.0.0      |
+|  5.12.12  | 5.12.12 |     1.0.0      |
 
 
 To run QJR System you need Python 3.7 or higher.
@@ -53,6 +53,10 @@ To run QJR System you need Python 3.7 or higher.
 12. Windows (died, last release: 5.11.2 (2025-11))
 
 #### Release notes:
+
+5.12.12 (2025-12-13)
+
+>> Helped users with requerement of module 'psutil': now in /system/ folder appears venv/ folder with the newest 'psutil' module version
 
 5.12.11 (2025-12-13)
 
