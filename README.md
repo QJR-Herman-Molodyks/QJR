@@ -109,7 +109,7 @@ To run QJR System you need Python 3.7 or higher.
 >> Bugfix
 >> Code optimization
 
-5.21.1 (2025-12-05)
+5.12.1 (2025-12-05)
 
 >> Added 'settings' app
 >> Added possibility to customize list files view from customizer utility
