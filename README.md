@@ -33,7 +33,7 @@ Last version which is still supported for Windows: 5.11.2
 ----------------------------------------------------
 |   Newest  | Stable  | Last supported |
 |-----------|---------|----------------|
-|  5.12.12  | 5.12.12 |     1.0.0      |
+|  5.12.14  | 5.12.14 |     1.0.0      |
 
 
 To run QJR System you need Python 3.7 or higher.
