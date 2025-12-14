@@ -54,6 +54,18 @@ To run QJR System you need Python 3.7 or higher.
 
 #### Release notes:
 
+5.12.14 (2025-12-14)
+
+>> Added support for 'dir' command
+>> Code optimization
+>> Bugfix
+
+5.12.13 (2025-12-14)
+
+>> Fixed bug with 'guess_the_number'
+>> Updated 'guess_the_number' to v1.5!
+>> Code optimization
+
 5.12.12 (2025-12-13)
 
 >> Helped users with requerement of module 'psutil': now in /system/ folder appears venv/ folder with the newest 'psutil' module version
