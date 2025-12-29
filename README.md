@@ -25,10 +25,10 @@ Last version which is still supported for Windows: 5.11.2
 
 #### Releases:
 
-5.12.0 - December 2025;
-6.0.0  - January 2026 ;
-6.1.0  - January 2026 ;
-6.2.0  - February 2026;
+6.0.0  - January 2026 
+6.1.0  - January 2026 
+6.2.0  - February 2026
+6.3.0  - March 2026
 
 ----------------------------------------------------
 |   Newest  | Stable  | Last supported |
