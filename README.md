@@ -57,6 +57,11 @@ To run QJR System you need Python 3.7 or higher.
 
 #### Release notes:
 
+6.0.1 (2025-01-01):
+- Added a trasparent cude, triangle and pyramid 3D models
+- Also 2D square model
+- Advanced time clock app
+
 Q-J-R SERVER 1.6 (2025-01-01)
 
 - Updated kernel to 6.0.0
