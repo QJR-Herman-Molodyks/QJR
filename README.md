@@ -9,10 +9,10 @@ User Agreement:
 
 Edit Date: 2025-10-27
 
-#### HydroOS v1.0 and QJR System v5.12.0
+#### QJR System v6.0.0
 
-HydroOS v1.0 and QJR System v5.12.0 Color 
-will be released: 2025-12-01.
+QJR System v6.0.0 
+will be released: 2026-01-01.
 
 ---------------------------
 
