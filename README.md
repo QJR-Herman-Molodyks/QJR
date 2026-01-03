@@ -36,7 +36,7 @@ Last version which is still supported for Windows: 5.11.2
 ----------------------------------------------------
 |   Newest  | Stable  | Last supported |
 |-----------|---------|----------------|
-|   5.13.0  | 5.13.0  |     1.0.0      |
+|   6.0.2   |  6.0.2  |     1.0.0      |
 
 
 To run QJR System you need Python 3.7 or higher.
@@ -56,6 +56,12 @@ To run QJR System you need Python 3.7 or higher.
 12. Windows (died, last release: 5.11.2 (2025-11))
 
 #### Release notes:
+
+6.0.2 (2025-01-03):
+
+- Bugfix
+- Optimization
+- Made QJR System more flexible
 
 6.0.1 (2025-01-01):
 - Added a trasparent cude, triangle and pyramid 3D models
