@@ -34,9 +34,9 @@ Last version which is still supported for Windows: 5.11.2
 6.3.0  - March 2026
 
 ----------------------------------------------------
-|   Newest  | Stable  | Last supported |
-|-----------|---------|----------------|
-|   6.0.2   |  6.0.2  |     1.0.0      |
+|   Newest       | Stable  | Last supported |
+|----------------|---------|----------------|
+|   6.1.0 Beta   |  6.0.2  |     1.0.0      |
 
 
 To run QJR System you need Python 3.7 or higher.
@@ -56,6 +56,12 @@ To run QJR System you need Python 3.7 or higher.
 12. Windows (died, last release: 5.11.2 (2025-11))
 
 #### Release notes:
+
+6.1.0 (2025-01-xx):
+
+- Added new 3D models: cube-2, cube-2 transprent
+- Bugfix
+- Code optimization
 
 6.0.2 (2025-01-03):
 
