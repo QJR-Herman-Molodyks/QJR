@@ -62,6 +62,8 @@ To run QJR System you need Python 3.7 or higher.
 - Added new 3D models: cube-2, cube-2 transprent
 - Bugfix
 - Code optimization
+- Added new command: 'log'
+- Added new command: 'uname'
 
 6.0.2 (2025-01-03):
 
