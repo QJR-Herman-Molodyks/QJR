@@ -60,6 +60,7 @@ To run QJR System you need Python 3.7 or higher.
 6.1.1 (2025-01-10):
 
  - Updated logon screen
+ - Updated calculator to v1.4.2
 
 6.1.0 (2025-01-09):
 
