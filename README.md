@@ -8,12 +8,6 @@ User Agreement:
      ANY DISTRIBUTIONS ALLOWED!!!
 
 Edit Date: 2025-10-27
-
-#### QJR System v6.0.0
-
-QJR System v6.0.0 
-will be released: 2026-01-01.
-
 ---------------------------
 
 #### Windows will lose Q-J-R Support soon!
@@ -34,9 +28,9 @@ Last version which is still supported for Windows: 5.11.2
 6.3.0  - March 2026
 
 ----------------------------------------------------
-|   Newes    | Stable  | Last supported |
+|   Latest   | Stable  | Last supported |
 |------------|---------|----------------|
-|   6.1.1    |  6.1.1  |     1.0.0      |
+|   6.1.3    |  6.1.3  |     1.0.0      |
 
 
 To run QJR System you need Python 3.7 or higher.
@@ -56,6 +50,14 @@ To run QJR System you need Python 3.7 or higher.
 12. Windows (died, last release: 5.11.2 (2025-11))
 
 #### Release notes:
+
+6.1.3
+
+ - Added new command / utility : 'howmanydays'
+
+6.1.2
+
+ - Bugfix
 
 6.1.1 (2025-01-10):
 
@@ -83,7 +85,7 @@ To run QJR System you need Python 3.7 or higher.
 
 Q-J-R SERVER 1.6 (2025-01-01)
 
-- Updated kernel to 6.0.0
+- Updated Server kernel to 6.0.0
 - Updated new user system
 
 6.0.0 (2025-01-01)
