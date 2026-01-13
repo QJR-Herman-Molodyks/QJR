@@ -30,7 +30,7 @@ Last version which is still supported for Windows: 5.11.2
 ----------------------------------------------------
 |   Latest   | Stable  | Last supported |
 |------------|---------|----------------|
-|   6.1.3    |  6.1.3  |     1.0.0      |
+| 6.2.0 Beta |  6.1.4  |     1.0.0      |
 
 
 To run QJR System you need Python 3.7 or higher.
@@ -50,6 +50,11 @@ To run QJR System you need Python 3.7 or higher.
 12. Windows (died, last release: 5.11.2 (2025-11))
 
 #### Release notes:
+
+6.2.0
+
+ - Added 'UNIX COMMANDS' section to the command list
+ - Improved detailed file list
 
 6.1.4
 
