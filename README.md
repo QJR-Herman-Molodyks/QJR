@@ -54,6 +54,8 @@ To run QJR System you need Python 3.7 or higher.
 6.1.3
 
  - Added new command / utility : 'howmanydays'
+ - Improved files list data
+ - Improved 3D models
 
 6.1.2
 
