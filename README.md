@@ -54,7 +54,11 @@ To run QJR System you need Python 3.7 or higher.
 6.2.0
 
  - Added 'UNIX COMMANDS' section to the command list
- - Improved detailed file list
+ - Improved detailed file list with file types and icons
+ - Added '~' path to get back home
+ - Bugfix
+ - Fixed critical bug
+ - Little code optimization
 
 6.1.4
 
