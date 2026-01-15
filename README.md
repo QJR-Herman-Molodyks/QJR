@@ -57,10 +57,12 @@ To run QJR System you need Python 3.7 or higher.
 
  - Added 'UNIX COMMANDS' section to the command list
  - Improved detailed file list with file types and icons
- - Added '~' path to get back home
+ - Added '~' path to get back home system folder: ls, cd
  - Bugfix
- - Fixed critical bug
+ - Fixed a critical bug
  - Little code optimization
+ - Added a security message if you're running not from the correct folder.
+ - 
 
 6.1.4
 
@@ -131,7 +133,7 @@ Q-J-R SERVER 1.6 (2025-01-01)
 
 5.12.12 (2025-12-13)
 
-- Helped users with requerement of module 'psutil': now in /system/ folder appears venv/ folder with the newest 'psutil' module version
+- Helped users with requerement of module 'psutil': now in /system/ folder appears venv/ folder with the newest 'psutil' module
 
 5.12.11 (2025-12-13)
 
