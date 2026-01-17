@@ -62,6 +62,7 @@ To run QJR System you need Python 3.7 or higher.
  - Fixed a critical bug
  - Little code optimization
  - Added a security message if you're running not from the correct folder.
+ - Come code improvements
 
 6.1.4
 
