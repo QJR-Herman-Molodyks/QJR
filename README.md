@@ -30,7 +30,7 @@ Last version which is still supported for Windows: 5.11.2
 ----------------------------------------------------
 |  Latest  | Stable  | Last supported |
 |----------|---------|----------------|
-|  6.2.1   |  6.2.1  |     1.0.0      |
+|  6.2.2   |  6.2.2  |     1.0.0      |
 
 
 To run QJR System you need Python 3.7 or higher.
@@ -53,14 +53,19 @@ To run QJR System you need Python 3.7 or higher.
 
 #### Release notes:
 
-6.2.1
+## 6.2.2
+
+- Code optimization
+- 
+
+## 6.2.1
  
  - Added feature of moving files
  - Added Library feature
  - Minor changes
  - Bugfix
 
-6.2.0
+## 6.2.0
 
  - Added 'UNIX COMMANDS' section to the command list
  - Improved detailed file list with file types and icons
@@ -73,26 +78,26 @@ To run QJR System you need Python 3.7 or higher.
  - Fixed bugs with file listing
  - Added new possibility to copy files
 
-6.1.4
+## 6.1.4
 
  - Code optimization
 
-6.1.3
+## 6.1.3
 
  - Added new command / utility : 'howmanydays'
  - Improved files list data
  - Improved 3D models
 
-6.1.2
+## 6.1.2
 
  - Bugfix
 
-6.1.1 (2025-01-10):
+## 6.1.1 (2025-01-10):
 
  - Updated logon screen
  - Updated calculator to v1.4.2
 
-6.1.0 (2025-01-09):
+## 6.1.0 (2025-01-09):
 
 - Added new 3D models: cube-2, cube-2 transprent
 - Bugfix
@@ -100,109 +105,109 @@ To run QJR System you need Python 3.7 or higher.
 - Added new command: 'log'
 - Added new command: 'uname'
 
-6.0.2 (2025-01-03):
+## 6.0.2 (2025-01-03):
 
 - Bugfix
 - Optimization
 - Made QJR System more flexible
 
-6.0.1 (2025-01-01):
+## 6.0.1 (2025-01-01):
 - Added a trasparent cude, triangle and pyramid 3D models
 - Also 2D square model
 - Advanced time clock app
 
-Q-J-R SERVER 1.6 (2025-01-01)
+## Q-J-R SERVER 1.6 (2025-01-01)
 
 - Updated Server kernel to 6.0.0
 - Updated new user system
 
-6.0.0 (2025-01-01)
+## 6.0.0 (2025-01-01)
 
 - Added a 3D model support: cube
 - Optimized code
 - Bugfix
 
-5.13.0 (2025-12-21):
+## 5.13.0 (2025-12-21):
 
 - Added new features
 - Optimized code
 - Bugfix
 
-5.12.14 (2025-12-14)
+## 5.12.14 (2025-12-14)
 
 - Added support for 'dir' command
 - Code optimization
 - Bugfix
 
-5.12.13 (2025-12-14)
+## 5.12.13 (2025-12-14)
 
 - Fixed bug with 'guess_the_number'
 - Updated 'guess_the_number' to v1.5!
 - Code optimization
 
-5.12.12 (2025-12-13)
+## 5.12.12 (2025-12-13)
 
 - Helped users with requerement of module 'psutil': now in /system/ folder appears venv/ folder with the newest 'psutil' module
 
-5.12.11 (2025-12-13)
+## 5.12.11 (2025-12-13)
 
 - Fixed a critical bug with 'debug'
 
-5.12.10 (2025-12-13)
+## 5.12.10 (2025-12-13)
 
 - Fixed bug with 'hostname' command
 - Optimized code
 
-5.12.9 (2025-12-13)
+## 5.12.9 (2025-12-13)
 
 - Bugfix
 
-5.12.8 (2025-12-12)
+## 5.12.8 (2025-12-12)
 
 - Updated and upgraded the new notepad (Now file can be edited with multiple strings)
 - Optimized code
 - Bugfix
 
-5.12.7 (2025-12-11)
+## 5.12.7 (2025-12-11)
 
 - Fixed bug with file properties error
 - Have made Q-J-R System more alive
 - Optimized code
 
-5.12.6 (2025-12-10)
+## 5.12.6 (2025-12-10)
 
 - Fixed bug with list setting
 - Code optimization
 
-5.12.5 (2025-12-09)
+## 5.12.5 (2025-12-09)
 
 - Added 'clear' command, that allows to clear file content
 - Code optimization
 
-5.12.4 (2025-12-08)
+## 5.12.4 (2025-12-08)
 
 - Updated 'Bin (Bit)' app to version 1.5.2
 - Bugfix
 - Code optimization
 
-5.12.3 (2025-12-07)
+## 5.12.3 (2025-12-07)
 
 - Updated 'Bin (Bit)' app to version 1.5.2
 
-5.12.2 (2025-12-06)
+## 5.12.2 (2025-12-06)
 
 - Added app 'Bit (Bit)' release 1.4.3 (without beta)
 - Bugfix
 - Code optimization
 
-5.12.1 (2025-12-05)
+## 5.12.1 (2025-12-05)
 
 - Added 'settings' app
 - Added possibility to customize list files view from customizer utility
 - Bugfix
 - Code optimization
 
-5.12.0 (2025-12-01) - GLOBAL
+## 5.12.0 (2025-12-01) - GLOBAL
 
 - Added color text conhost
 - Added new customization for 'help' menu settings
