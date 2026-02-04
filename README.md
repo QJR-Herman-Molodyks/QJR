@@ -3,10 +3,10 @@ Official Q-J-R Open Source repository
 
 ### Plans:
 
-> 🔋 Add battery percentage info (for laptops/computers/portable computers with connected battery)
-> 📝 NEW NOTES: Stickies app!
-> 💡 Control everything better and make higher productivity with a dashboard app!
-> 🕹️ New tab 'apps' with new apps and utilities!
+- 🔋 Add battery percentage info (for laptops/computers/portable computers with connected battery)
+- 📝 NEW NOTES: Stickies app!
+- 💡 Control everything better and make higher productivity with a dashboard app!
+- 🕹️ New tab 'apps' with new apps and utilities!
 
 User Agreement:
 1.0. Q-J-R IS AN OPEN SOURCE PRODUCT WITH NO LICENSE!
