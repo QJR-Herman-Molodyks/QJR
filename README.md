@@ -1,7 +1,12 @@
 # Q-J-R
 Official Q-J-R Open Source repository
 
+### Plans:
 
+> 🔋 Add battery percentage info (for laptops/computers/portable computers with connected battery)
+> 📝 NEW NOTES: Stickies app!
+> 💡 Control everything better and make higher productivity with a dashboard app!
+> 🕹️ New tab 'apps' with new apps and utilities!
 
 User Agreement:
 1.0. Q-J-R IS AN OPEN SOURCE PRODUCT WITH NO LICENSE!
@@ -53,17 +58,21 @@ To run QJR System you need Python 3.7 or higher.
 
 #### Release notes:
 
+## 6.2.4
+
+- ✨ NEW FEATURE: DDoS Attack simulation (run with 'ddos')
+
 ## 6.2.3
 
-- Bugfix
-- Code optimization
-- Minor changes
+- 🛠️ Bugfix
+- 🧱 Code optimization
+- 🔧 Minor changes
 
 ## 6.2.2
 
-- Code optimization
-- Added new features
-- Bugfix
+- 🔧 Code optimization
+- ✨ Added new features
+- 🛠️ Bugfix
 
 ## 6.2.1
  
