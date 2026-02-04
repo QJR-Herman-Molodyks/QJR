@@ -32,6 +32,10 @@ Last version which is still supported for Windows: 5.11.2
 
 6.3.0  - March 2026
 
+6.4.0 - April 2026
+
+6.5.0 - May, 2026
+
 -----------------------------------------------------------------
 |  Latest  | Stable  | Last supported | Modified and remastered |
 |----------|---------|----------------|-------------------------|
