@@ -58,7 +58,8 @@ To run QJR System you need Python 3.7 or higher.
 11. NinjaX_OS (v1.0 or higher)
 12. Sun Solaris (from source code)
 13. NetBSD (from source code)
-14. Windows (died, last release: 5.11.2 (2025-11))
+14. AIX (from source code)
+15. Windows (died, last release: 5.11.2 (2025-11))
 
 #### Release notes:
 
