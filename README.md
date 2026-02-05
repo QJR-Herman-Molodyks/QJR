@@ -39,7 +39,7 @@ Last version which is still supported for Windows: 5.11.2
 -----------------------------------------------------------------
 |  Latest  | Stable  | Last supported | Modified and remastered |
 |----------|---------|----------------|-------------------------|
-|  6.2.2   |  6.2.2  |     1.0.0      |         1.5.2           |  
+|  6.2.5   |  6.2.5  |     1.0.0      |         1.5.2           |  
 
 
 To run QJR System you need Python 3.7 or higher.
@@ -62,30 +62,34 @@ To run QJR System you need Python 3.7 or higher.
 
 #### Release notes:
 
-## 6.2.4
+## 6.2.5 (2026-02-05)
+
+- 🔧 Added new fily types support
+
+## 6.2.4 (2026-02-04)
 
 - ✨ NEW FEATURE: DDoS Attack simulation (run with 'ddos')
 
-## 6.2.3
+## 6.2.3 (2026-02-03)
 
 - 🛠️ Bugfix
 - 🧱 Code optimization
 - 🔧 Minor changes
 
-## 6.2.2
+## 6.2.2 (2026-02-01)
 
 - 🔧 Code optimization
 - ✨ Added new features
 - 🛠️ Bugfix
 
-## 6.2.1
+## 6.2.1 (2026-02-01)
  
  - Added feature of moving files
  - Added Library feature
  - Minor changes
  - Bugfix
 
-## 6.2.0
+## 6.2.0 (2026-02-01)
 
  - Added 'UNIX COMMANDS' section to the command list
  - Improved detailed file list with file types and icons
