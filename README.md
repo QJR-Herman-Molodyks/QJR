@@ -40,7 +40,7 @@ Last version which is still supported for Windows: 5.11.2
 -----------------------------------------------------------------
 |  Latest  | Stable  | Last supported | Modified and remastered |
 |----------|---------|----------------|-------------------------|
-|  6.2.5   |  6.2.5  |     1.0.0      |         1.5.2           |  
+|  6.2.7   |  6.2.7  |     1.0.0      |         1.5.2           |  
 
 
 To run QJR System you need Python 3.7 or higher.
@@ -63,6 +63,15 @@ To run QJR System you need Python 3.7 or higher.
 15. Windows (died, last release: 5.11.2 (2025-11))
 
 #### Release notes:
+
+## 6.2.7 (2026-02-08)
+
+- 📂 Fixed bug with venv
+- 🔧 Fixed pug with Network connector app
+
+## 6.2.6 (2026-02-08)
+
+- 🛜 Added possibility to connect to the network
 
 ## 6.2.5 (2026-02-05)
 
