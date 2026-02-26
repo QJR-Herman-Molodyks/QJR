@@ -64,6 +64,16 @@ To run QJR System you need Python 3.7 or higher.
 
 #### Release notes:
 
+## 6.3.0 (2026-03-01)
+
+- 🔢 Added math tab and features, such as: abs, round, sin, cos, tan, exp, sqrt
+- 🛠️ Optimization
+- 🔨 Added developer tab with developer commands
+
+## 6.2.9
+
+## 6.2.8
+
 ## 6.2.7 (2026-02-08)
 
 - 📂 Fixed bug with venv
