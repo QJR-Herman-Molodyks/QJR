@@ -64,9 +64,13 @@ To run QJR System you need Python 3.7 or higher.
 
 #### Release notes:
 
+## 6.3.3 (2026-03-08)
+
+- ℹ️ Added a UNIX neofetch command
+
 ## 6.3.2 (2026-03-06)
 
-- 🔨 Added new features and apps
+- 🔨 Added new features and apps such as a factorial
 
 ## 6.3.1 (2026-03-05)
 
