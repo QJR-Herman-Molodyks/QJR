@@ -64,6 +64,10 @@ To run QJR System you need Python 3.7 or higher.
 
 #### Release notes:
 
+## 6.3.4 (2026-03-09)
+
+- 🔍 Added search command for easy file search by name! Usage: search <filenames>; Example > search file.txt
+
 ## 6.3.3 (2026-03-08)
 
 - ℹ️ Added a UNIX neofetch command
