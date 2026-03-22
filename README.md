@@ -10,6 +10,7 @@ Official Q-J-R Open Source repository
 - 🕹️ Use a console history with arrow keys!
 
 User Agreement:
+
 1.0. Q-J-R IS AN OPEN SOURCE PRODUCT WITH NO LICENSE!
      ANY DISTRIBUTIONS ALLOWED!!!
 
