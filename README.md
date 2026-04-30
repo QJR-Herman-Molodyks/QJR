@@ -27,17 +27,11 @@ Last version which is still supported for Windows: 5.11.2
 
 #### Releases:
 
-6.0.0  - January 2026
-
-6.1.0  - January 2026 
-
-6.2.0  - February 2026
-
-6.3.0  - March 2026
-
-6.4.0 - April 2026
-
 6.5.0 - May, 2026
+6.6.0 - June, 2026
+6.7.0 - July, 2026
+6.8.0 - August, 2026
+6.9.0 - September, 2026
 
 -----------------------------------------------------------------
 |  Latest  | Stable  | Last supported | Modified and remastered |
@@ -71,6 +65,7 @@ To run QJR System you need Python 3.7 or higher.
 - 🔨 Optimization
 - ⏰ New 'clock' app
 - 🗄️ UNIX filesystem under system support (not for user)
+- 🪏 QJRassembly interpreter is now built-in the Q-J-R System!
 - ⚒️ Other features
 
 ## 6.3.5 (2026-03-22)
