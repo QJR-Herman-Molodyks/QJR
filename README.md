@@ -6,8 +6,9 @@ Official Q-J-R Open Source repository
 - 🔋 Add battery percentage info (for laptops/computers/portable computers with connected battery)
 - 📝 NEW NOTES: Stickies app!
 - 💡 Control everything better and make higher productivity with a dashboard app!
-- 🛠️ New tab 'apps' with new apps and utilities!
+- 🛠️ New tab 'apps' with new apps and utilities! ✅ done
 - 🕹️ Use a console history with arrow keys!
+- 📄 Open / edit files with the selected encoding (using: read <filename> <encoding>, if <encoding> is None: <ecncoding> = UTF-8)
 
 User Agreement:
 
@@ -41,7 +42,7 @@ Last version which is still supported for Windows: 5.11.2
 -----------------------------------------------------------------
 |  Latest  | Stable  | Last supported | Modified and remastered |
 |----------|---------|----------------|-------------------------|
-|   6.3.5  |  6.3.5  |     1.0.0      |         1.5.2           |  
+|   6.4.0  |  6.3.5  |     1.0.0      |         1.5.2           |  
 
 
 To run QJR System you need Python 3.7 or higher.
@@ -64,6 +65,13 @@ To run QJR System you need Python 3.7 or higher.
 15. Windows (died, last release: 5.11.2 (2025-11))
 
 #### Release notes:
+
+## 6.4.0 (2026-04-31)
+
+- 🔨 Optimization
+- ⏰ New 'clock' app
+- 🗄️ UNIX filesystem under system support (not for user)
+- ⚒️ Other features
 
 ## 6.3.5 (2026-03-22)
 
