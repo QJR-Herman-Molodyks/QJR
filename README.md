@@ -34,9 +34,9 @@ Last version which is still supported for Windows: 5.11.2
 6.9.0 - September, 2026
 
 -----------------------------------------------------------------
-|  Latest  | Stable  | Last supported | Modified and remastered |
-|----------|---------|----------------|-------------------------|
-|   6.4.0  |  6.3.5  |     1.0.0      |         1.5.2           |  
+|       Latest        | Stable  | Last supported | Modified and remastered |
+|---------------------|---------|----------------|-------------------------|
+|   6.5.0 Dev beta 1  |  6.3.5  |     1.0.0      |         1.5.2           |  
 
 
 To run QJR System you need Python 3.7 or higher.
@@ -59,6 +59,13 @@ To run QJR System you need Python 3.7 or higher.
 15. Windows (died, last release: 5.11.2 (2025-11))
 
 #### Release notes:
+
+## 6.5.0 (Developer Beta 1)
+
+- 🔨 Math-commands execution Optimization
+- 💻 'psutil' library is now built-in into a Q-J-R System
+- 🟢 Neofetch Q-J-R ASCII logo changed, so now Python doesn't say WARNING about that.
+- ⚒️ Other features
 
 ## 6.4.0 (2026-04-31)
 
