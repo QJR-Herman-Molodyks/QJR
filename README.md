@@ -3,12 +3,12 @@ Official Q-J-R Open Source repository
 
 ### Plans:
 
-- 🔋 Add battery percentage info (for laptops/computers/portable computers with connected battery)
+- 🔋 Add battery percentage info (for laptops/computers/portable computers with connected battery) ✅ done
 - 📝 NEW NOTES: Stickies app!
 - 💡 Control everything better and make higher productivity with a dashboard app!
 - 🛠️ New tab 'apps' with new apps and utilities! ✅ done
 - 🕹️ Use a console history with arrow keys!
-- 📄 Open / edit files with the selected encoding (using: read <filename> <encoding>, if <encoding> is None: <ecncoding> = UTF-8)
+- 📄 Open / edit files with the selected encoding (using: read <filename> <encoding>, if <encoding> is None: <ecncoding> = UTF-8) ✅ done
 
 User Agreement:
 
