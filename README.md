@@ -12,10 +12,9 @@ Official Q-J-R Open Source repository
 
 User Agreement:
 
-1.0. Q-J-R IS AN OPEN SOURCE PRODUCT WITH NO LICENSE!
-     ANY DISTRIBUTIONS ALLOWED!!!
+1.0. Q-J-R IS AN OPEN SOURCE PRODUCT WITH MIT LICENSE!
 
-Edit Date: 2025-10-27
+Last Edit Date: 2026-05-08
 ---------------------------
 
 #### Windows will lose Q-J-R Support soon!
