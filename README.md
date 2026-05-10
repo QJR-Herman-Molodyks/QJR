@@ -121,7 +121,7 @@ To run QJR System you need Python 3.7 or higher.
 
 ## 6.2.5 (2026-02-05)
 
-- 🔧 Added new fily types support
+- 🔧 Added new file types support
 
 ## 6.2.4 (2026-02-04)
 
