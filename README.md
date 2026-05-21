@@ -59,12 +59,13 @@ To run QJR System you need Python 3.7 or higher.
 
 #### Release notes:
 
-## 6.5.0 (Developer Beta 1)
+## 6.5.0
 
 - 🔨 Math-commands execution Optimization
 - 💻 'psutil' library is now built-in into a Q-J-R System
 - 🟢 Neofetch Q-J-R ASCII logo changed, so now Python doesn't say WARNING about that.
 - ⚒️ Other features
+- Updated echo. Added '$' option, such as: $PATH; $VER; $pYThoN
 
 ## 6.4.0 (2026-04-31)
 
