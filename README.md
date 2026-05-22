@@ -59,13 +59,16 @@ To run QJR System you need Python 3.7 or higher.
 
 #### Release notes:
 
-## 6.5.0
+## 6.5.0 (2026-05-22)
 
 - 🔨 Math-commands execution Optimization
 - 💻 'psutil' library is now built-in into a Q-J-R System
 - 🟢 Neofetch Q-J-R ASCII logo changed, so now Python doesn't say WARNING about that.
 - ⚒️ Other features
-- Updated echo. Added '$' option, such as: $PATH; $VER; $pYThoN
+- 🔊 Updated echo. Added '$' option, such as: $PATH; $VER; $PYTHON
+- 🔎 Added possibility to search files and lines by a content: usage: find <content>
+- 🔢 Added line numberation in files: read command.
+- 🛠️ Made global optimization
 
 ## 6.4.0 (2026-04-31)
 
