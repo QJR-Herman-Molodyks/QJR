@@ -59,7 +59,7 @@ To run QJR System you need Python 3.7 or higher.
 
 #### Release notes:
 
-## 6.5.0 (2026-05-22)
+## 6.5.0 (2026-05-23)
 
 - 🔨 Math-commands execution Optimization
 - 💻 'psutil' library is now built-in into a Q-J-R System
