@@ -17,20 +17,19 @@ User Agreement:
 Last Edit Date: 2026-05-08
 ---------------------------
 
-#### Windows will lose Q-J-R Support soon!
+#### Windows has lost Q-J-R System Support!
 
-Windows 11 or higher will lose Q-J-R System support,
-because of problems, that connected with QJR Software!
+Windows 11 or higher has lost Q-J-R System support.
 
 Last version which is still supported for Windows: 5.11.2 
 
 #### Releases:
 
-6.5.0 - May, 2026
 6.6.0 - June, 2026
 6.7.0 - July, 2026
 6.8.0 - August, 2026
 6.9.0 - September, 2026
+6.10.0 - October, 2026
 
 ----------------------------------------------------------------------------
 |       Latest        | Stable  | Last supported | Modified and remastered |
