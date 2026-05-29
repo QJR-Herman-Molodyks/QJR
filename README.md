@@ -58,6 +58,16 @@ To run QJR System you need Python 3.7 or higher.
 
 #### Release notes:
 
+## 6.6.0 
+
+- 🛡️ Added QJRsecurity 2.0: hashed password, brootforce security, lockdown
+- 🔨 Optimization
+
+## 6.5.2 (2026-05-27)
+
+- 🖥️ Updated neofetch. Added CPU and GPU recogniaition by architecture. Added architecture output and a color map.
+- 🖊️ Made small edits and optimization
+
 ## 6.5.1 (2026-05-25)
 
 - 📄 Added new file size view that is easier for user
