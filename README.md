@@ -25,11 +25,11 @@ Last version which is still supported for Windows: 5.11.2
 
 #### Releases:
 
-6.6.0 - June, 2026
-6.7.0 - July, 2026
-6.8.0 - August, 2026
-6.9.0 - September, 2026
-6.10.0 - October, 2026
+6.6.0 - June, 2026\n
+6.7.0 - July, 2026\n
+6.8.0 - August, 2026\n
+6.9.0 - September, 2026\n
+6.10.0 - October, 2026\n
 
 ----------------------------------------------------------------------------
 |       Latest        | Stable  | Last supported | Modified and remastered |
