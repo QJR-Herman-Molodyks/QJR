@@ -9,6 +9,7 @@ Official Q-J-R Open Source repository
 - 🛠️ New tab 'apps' with new apps and utilities! ✅ done
 - 🕹️ Use a console history with arrow keys!
 - 📄 Open / edit files with the selected encoding (using: read <filename> <encoding>, if <encoding> is None: <ecncoding> = UTF-8) ✅ done
+- 🔀 Add file merge feature
 
 User Agreement:
 
