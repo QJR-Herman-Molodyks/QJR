@@ -11,6 +11,11 @@ Official Q-J-R Open Source repository
 - 📄 Open / edit files with the selected encoding (using: read <filename> <encoding>, if <encoding> is None: <ecncoding> = UTF-8) ✅ done
 - 🔀 Add file merge feature
 
+### Found bugs:
+
+- ❌ Removing folders (even created by user) from system directory stdouts an error (ERRNO 1: Operation is not permitted)
+  Status: ❌ NOT FIXED
+
 User Agreement:
 
 1.0. Q-J-R IS AN OPEN SOURCE PRODUCT WITH MIT LICENSE!
