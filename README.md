@@ -10,11 +10,12 @@ Official Q-J-R Open Source repository
 - 🕹️ Use a console history with arrow keys!
 - 📄 Open / edit files with the selected encoding (using: read <filename> <encoding>, if <encoding> is None: <ecncoding> = UTF-8) ✅ done
 - 🔀 Add file merge feature
+- 🖊️ Update text editor to more advanced
 
 ### Found bugs:
 
 - ❌ Removing folders (even created by user) from system directory stdouts an error (ERRNO 1: Operation is not permitted)
-  Status: ❌ NOT FIXED
+  Status: ✅ FIXED
 
 User Agreement:
 
@@ -40,7 +41,7 @@ Last version which is still supported for Windows: 5.11.2
 ----------------------------------------------------------------------------
 |       Latest        | Stable  | Last supported | Modified and remastered |
 |---------------------|---------|----------------|-------------------------|
-|          6.6.0 beta |  6.5.2  |     1.0.0      |         1.5.2           |  
+|          6.6.0      |  6.6.0  |     1.0.0      |         1.5.2           |  
 
 
 To run QJR System you need Python 3.7 or higher.
@@ -64,10 +65,15 @@ To run QJR System you need Python 3.7 or higher.
 
 #### Release notes:
 
-## 6.6.0 
+## 6.6.0 (2025-06-15)
 
 - 🛡️ Added QJRsecurity 2.0: hashed password, brootforce security, lockdown
-- 🔨 Optimization
+- 👤 Added better multiuser support (almost advanced): useradd, deliuser, userlist, passwd. Users: add, delete, list. Also changing password available (admins can change users passwords: passwd <user>)
+- 🔨 Global Optimization
+- 📜 Added QJRtemp support
+- 🛠️ Bugfix: delete folder bugs and other
+- 📦 QJRpkg package manager added
+- 🔗 Other changes
 
 ## 6.5.2 (2026-05-27)
 
