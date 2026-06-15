@@ -67,7 +67,7 @@ To run QJR System you need Python 3.7 or higher.
 
 ## 6.6.0 (2025-06-15)
 
-- 🛡️ Added QJRsecurity 2.0: hashed password, brootforce security, lockdown
+- 🛡️ Added QJRsecurity 2.0: hashed password, brootforce security, lockdown, delete authendefication gate file security, other securoty features.
 - 👤 Added better multiuser support (almost advanced): useradd, deliuser, userlist, passwd. Users: add, delete, list. Also changing password available (admins can change users passwords: passwd <user>)
 - 🔨 Global Optimization
 - 📜 Added QJRtemp support
