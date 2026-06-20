@@ -11,7 +11,7 @@ Official Q-J-R Open Source repository
 - 📄 Open / edit files with the selected encoding (using: read <filename> <encoding>, if <encoding> is None: <ecncoding> = UTF-8) ✅ done
 - 🔀 Add file merge feature
 - 🖊️ Update text editor to more advanced
-- 🗒️ Add advanced log control
+- 🗒️ Add advanced log control ✅ done
 
 ### Found bugs:
 
@@ -69,6 +69,8 @@ To run QJR System you need Python 3.7 or higher.
 ## 6.6.1 RC 
 
 - ☑️ Made prettier information view at system start
+- 📄 Added advanced logging system: writing, openinig, cleaning logs
+- 🔨 Minor changes 
 
 ## 6.6.0 (2025-06-15)
 
