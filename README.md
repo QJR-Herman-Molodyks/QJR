@@ -11,7 +11,7 @@ Official Q-J-R Open Source repository
 - 📄 Open / edit files with the selected encoding (using: read <filename> <encoding>, if <encoding> is None: <ecncoding> = UTF-8) ✅ done
 - 🔀 Add file merge feature
 - 🖊️ Update text editor to more advanced
-- 🗒️ Add adwanced log control
+- 🗒️ Add advanced log control
 
 ### Found bugs:
 
