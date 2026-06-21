@@ -66,7 +66,12 @@ To run QJR System you need Python 3.7 or higher.
 
 #### Release notes:
 
-## 6.6.1 RC 
+## 6.6.2 RC 1 (2026-06-21)
+
+- 🛡️ QJRsecurity 2.2: user password SHA512 dual-hash, unique signature for authendification file and more
+- 🔨 Bugfix
+
+## 6.6.1 (2026-06-20) 
 
 - ☑️ Made prettier information view at system start
 - 📄 Added advanced logging system: writing, openinig, cleaning logs
