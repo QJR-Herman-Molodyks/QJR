@@ -42,7 +42,7 @@ Last version which is still supported for Windows: 5.11.2
 ----------------------------------------------------------------------------
 |       Latest        | Stable  | Last supported | Modified and remastered |
 |---------------------|---------|----------------|-------------------------|
-|          6.6.1 RC   |  6.6.0  |     1.0.0      |         1.5.2           |  
+|        6.6.1        |  6.6.1  |     1.0.0      |         1.5.2           |  
 
 
 To run QJR System you need Python 3.7 or higher.
