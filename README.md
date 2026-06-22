@@ -42,7 +42,7 @@ Last version which is still supported for Windows: 5.11.2
 ----------------------------------------------------------------------------
 |       Latest        | Stable  | Last supported | Modified and remastered |
 |---------------------|---------|----------------|-------------------------|
-|        6.6.1        |  6.6.1  |     1.0.0      |         1.5.2           |  
+|        6.6.2        |  6.6.2  |     1.0.0      |         1.5.2           |  
 
 
 To run QJR System you need Python 3.7 or higher.
@@ -66,7 +66,7 @@ To run QJR System you need Python 3.7 or higher.
 
 #### Release notes:
 
-## 6.6.2 RC 1 (2026-06-21)
+## 6.6.2 (2026-06-22)
 
 - 🛡️ QJRsecurity 2.2: user password SHA512 dual-hash, unique signature for authendification file and more
 - 🔨 Bugfix
