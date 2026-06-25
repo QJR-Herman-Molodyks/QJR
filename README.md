@@ -12,6 +12,7 @@ Official Q-J-R Open Source repository
 - 🔀 Add file merge feature
 - 🖊️ Update text editor to more advanced
 - 🗒️ Add advanced log control ✅ done
+- ✔️ Add 'log list' command to get log list from {home}/db/logs (only logs)
 
 ### Found bugs:
 
