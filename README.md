@@ -19,10 +19,6 @@ Official Q-J-R Open Source repository
 - ❌ Removing folders (even created by user) from system directory stdouts an error (ERRNO 1: Operation is not permitted)
   Status: ✅ FIXED
 
-User Agreement:
-
-1.0. Q-J-R IS AN OPEN SOURCE PRODUCT WITH MIT LICENSE!
-
 Last Edit Date: 2026-05-08
 ---------------------------
 
