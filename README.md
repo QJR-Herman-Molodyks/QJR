@@ -63,9 +63,15 @@ To run QJR System you need Python 3.7 or higher.
 
 #### Release notes:
 
-## 6.6.3 RC (2026-06-23)
+## 6.6.4 (2026-07-05)
+
+- 🏡 Added homes for users
+- 👑 Added 'sudo' command to get admin access for session
+
+## 6.6.3 (2026-06-24)
 
 - 🖊️ Log critical problem fixed!
+- 👤 Fixed problems with users and added permissions
 
 ## 6.6.2 (2026-06-22)
 
