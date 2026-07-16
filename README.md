@@ -5,7 +5,7 @@ Official Q-J-R Open Source repository
 
 - 🔋 Add battery percentage info (for laptops/computers/portable computers with connected battery) ✅ done
 - 📝 NEW NOTES: Stickies app!
-- 💡 Control everything better and make higher productivity with a dashboard app!
+- 💡 Control everything better and get higher productivity with a dashboard app!
 - 🛠️ New tab 'apps' with new apps and utilities! ✅ done
 - 🕹️ Use a console history with arrow keys!
 - 📄 Open / edit files with the selected encoding (using: read <filename> <encoding>, if <encoding> is None: <ecncoding> = UTF-8) ✅ done
