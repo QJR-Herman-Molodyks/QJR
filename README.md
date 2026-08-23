@@ -63,6 +63,30 @@ To run QJR System you need Python 3.7 or higher.
 
 #### Release notes:
 
+## 6.7.0 (2026-08-23) (This update is STRONGLY recommended for Q-J-R System Users)
+
+- 🔨 INTRODUCING: QJRas, QJRcc, QJRld, QJRmake - Q-J-R Compilers
+- ▶️ New executable types: QJRexc, QJRelf, QJRo, QJRrun
+- ➡️ New component: QJRrun - to run Q-J-R Executable Files
+- ⚙️ Made 'sudo' subsystem
+- 🛠️ Fixed 40+ bugs:
+  Here's the most important bugs that were fixed:    
+  1. 🟰 Eval can run any Python code
+  2. 🐍 Full Python access is allowed for any users
+  3. 📁 Path Errors
+  4. 🏠 Home DB errors when you create new user
+  5. ❔ Help Displaying Bugs
+  6. 📋 String Format Error
+  7. ❗️ Exception Detection Error
+  8. 🔄 Circular Imports
+  9. 🏷️ File Type Recognition Initializes File Tagging System Every Time It Detects File
+  10. ✂️ Tags don't remove after file/directory deletion
+
+- 🛡️ Security Updates
+- 🟢 System Optimization
+- 🔐 Guests now can't: create, delete, rename, copy, merge, move, etc. with files/directories
+ 
+
 ## 6.6.4 (2026-07-05)
 
 - 🏡 Added homes for users
