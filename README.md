@@ -85,6 +85,8 @@ To run QJR System you need Python 3.7 or higher.
 - 🛡️ Security Updates
 - 🟢 System Optimization
 - 🔐 Guests now can't: create, delete, rename, copy, merge, move, etc. with files/directories
+- 🗂️ Added other file types recognizing
+- 🔧 Other system improvements and minor changes
  
 
 ## 6.6.4 (2026-07-05)
