@@ -30,16 +30,16 @@ Last version which is still supported for Windows: 5.11.2
 
 #### Releases:
 
-6.7.0 - July, 2026
 6.8.0 - August, 2026
 6.9.0 - September, 2026
 6.10.0 - October, 2026
 6.11.0 - November, 2026
+6.12.0 - December, 2026
 
 ----------------------------------------------------------------------------
 |       Latest        | Stable  | Last supported | Modified and remastered |
 |---------------------|---------|----------------|-------------------------|
-|        6.7.0 RC 2   |  6.6.4  |     1.0.0      |         1.5.2           |  
+|        6.7.0        |  6.7.0  |     1.0.0      |         1.5.2           |  
 
 
 To run QJR System you need Python 3.7 or higher.
