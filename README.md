@@ -1,7 +1,7 @@
 # Q-J-R
 Official Q-J-R Open-Source Free Software repository
 
-## Q-J-R System Integrated Operating Shell (IOSH) is fully Free and Open-Source Cross-Platform Software that gives you the same workflow and productive Console (Command Line) functionality on different OSes. It includes custom File-Work Utilities, Compilers, Linkers, UNIX Toolchain Tools, User Hierarchy, File System, Execution Formats, Security Features and OS integration. It works with "zero-dependencies" technology: "Run & Use".
+## Q-J-R System Integrated Operating Shell (IOSH) is fully Free and Open-Source Cross-Platform Software that gives you the same workflow and productive Console (Command Line) functionality on different OSes. It includes custom File-Work Utilities, Compilers, Linkers, UNIX Toolchain Tools, User Hierarchy, File System, Execution Formats, Full Q-J-R Intergration, Security Features and OS integration. It works with "zero-dependencies" technology: "Run & Use".
 
 ### Plans:
 
