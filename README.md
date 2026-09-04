@@ -57,6 +57,7 @@ To run QJR System you need Python 3.7 or higher.
 - 🛠️ Minor changes
 - ❕ Changed error messages
 - 🧮 Updated portable string calculator (v1.1): now it supports negative numbers!
+- ℹ️ Updated file information tool
 
 ## 6.7.0 (2026-08-23) (This update is STRONGLY recommended for Q-J-R System Users if they're using an older version of Q-J-R System)
 
