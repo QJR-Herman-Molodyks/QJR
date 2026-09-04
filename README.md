@@ -1,5 +1,7 @@
 # Q-J-R
-Official Q-J-R Open Source repository
+Official Q-J-R Open-Source Free Software repository
+
+## Q-J-R System Integrated Operating Shell (IOSH) is fully Free and Open-Source Cross-Platform Software that gives you the same workflow and productive Console (Command Line) functionality on different OSes. It includes ## custom File-Work Utilities, Compilers, Linkers, UNIX Toolchain Tools, User Hierarchy, File System, Execution Formats, Security Features and OS integration. It works with "zero-dependencies" technology: "Run & Use".
 
 ### Plans:
 
@@ -14,32 +16,18 @@ Official Q-J-R Open Source repository
 - 🗒️ Add advanced log control ✅ done
 - ✔️ Add 'log list' command to get log list from {home}/db/logs (only logs)
 
-### Found bugs:
-
-- ❌ Removing folders (even created by user) from system directory stdouts an error (ERRNO 1: Operation is not permitted)
-  Status: ✅ FIXED
-
-Last Edit Date: 2026-05-08
----------------------------
-
-#### Windows has lost Q-J-R System Support!
-
-Windows 11 or higher has lost Q-J-R System support.
-
-Last version which is still supported for Windows: 5.11.2 
-
 #### Releases:
-
-6.8.0 - August, 2026
-6.9.0 - September, 2026
-6.10.0 - October, 2026
-6.11.0 - November, 2026
-6.12.0 - December, 2026
+ 
+6.9.0 - September, 2026   
+6.10.0 - October, 2026   
+6.11.0 - November, 2026   
+6.12.0 - December, 2026   
+6.13.0 - December, 2026    
 
 ----------------------------------------------------------------------------
 |       Latest        | Stable  | Last supported | Modified and remastered |
 |---------------------|---------|----------------|-------------------------|
-|        6.7.0        |  6.7.0  |     1.0.0      |         1.5.2           |  
+|        6.8.0        |  6.8.0  |     1.0.0      |         1.5.2           |  
 
 
 To run QJR System you need Python 3.7 or higher.
@@ -63,7 +51,12 @@ To run QJR System you need Python 3.7 or higher.
 
 #### Release notes:
 
-## 6.7.0 (2026-08-23) (This update is STRONGLY recommended for Q-J-R System Users)
+## 6.8.0 (2026-09-04)
+
+- 🔨 Fixed 15 bugs
+- 🛠️ Minor changes
+
+## 6.7.0 (2026-08-23) (This update is STRONGLY recommended for Q-J-R System Users if they're using an older version of Q-J-R System)
 
 - 🔨 INTRODUCING: QJRas, QJRcc, QJRld, QJRmake - Q-J-R Compilers
 - ▶️ New executable types: QJRexc, QJRelf, QJRo, QJRrun
@@ -75,7 +68,7 @@ To run QJR System you need Python 3.7 or higher.
   2. 🐍 Full Python access is allowed for any users
   3. 📁 Path Errors
   4. 🏠 Home DB errors when you create new user
-  5. ❔ Help Displaying Bugs
+  5. ❔ Bugs with Displaying of Help
   6. 📋 String Format Error
   7. ❗️ Exception Detection Error
   8. 🔄 Circular Imports
