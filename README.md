@@ -11,7 +11,8 @@ Official Q-J-R Open-Source Free Software repository
 - 🛠️ New tab 'apps' with new apps and utilities! ✅ done
 - 🕹️ Use a console history with arrow keys!
 - 📄 Open / edit files with the selected encoding (using: read <filename> <encoding>, if <encoding> is None: <ecncoding> = UTF-8) ✅ done
-- 🔀 Add file merge feature
+- 🧮 Add feature to count characters, words, line in files (✅ done in new Beta Version of v6.9.0)
+- ↔️ Add file merge feature (✅ done in new Beta Version of v.6.9.0)
 - 🖊️ Update text editor to more advanced
 - 🗒️ Add advanced log control ✅ done
 - ✔️ Add 'log list' command to get log list from {home}/db/logs (only logs)
@@ -27,7 +28,7 @@ Official Q-J-R Open-Source Free Software repository
 ----------------------------------------------------------------------------
 |       Latest        | Stable  | Last supported | Modified and remastered |
 |---------------------|---------|----------------|-------------------------|
-|        6.8.0        |  6.8.0  |     1.0.0      |         1.5.2           |  
+|   6.9.0 Dev Beta 1  |  6.8.0  |     1.0.0      |         1.5.2           |  
 
 
 To run QJR System you need Python 3.7 or higher.
@@ -51,8 +52,14 @@ To run QJR System you need Python 3.7 or higher.
 
 #### Release notes:
 
+## 6.9.0 (Developer Beta 1 (2026-09-04))
+
+- ↔️ Added possibility to merge files ("merge "<filename_1>" "<filename_2>"" => then: enter the target of marked filename)
+- 🧮 Added possibility to count characters, lines, words in a file
+
 ## 6.8.0 (2026-09-04)
 
+- 🚀 Updated 2-argument command syntax: new: <command> "<arg_1>" "<arg_2>"
 - 🔨 Fixed 15 bugs
 - 🛠️ Minor changes
 - ❕ Changed error messages
