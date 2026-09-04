@@ -56,6 +56,7 @@ To run QJR System you need Python 3.7 or higher.
 - 🔨 Fixed 15 bugs
 - 🛠️ Minor changes
 - ❕ Changed error messages
+- 🧮 Updated portable string calculator (v1.1): now it supports negative numbers!
 
 ## 6.7.0 (2026-08-23) (This update is STRONGLY recommended for Q-J-R System Users if they're using an older version of Q-J-R System)
 
@@ -79,7 +80,9 @@ To run QJR System you need Python 3.7 or higher.
 - 🛡️ Security Updates
 - 🟢 System Optimization
 - 🔐 Guests now can't: create, delete, rename, copy, merge, move, etc. with files/directories
-- 🗂️ Added other file types recognizing
+- 🗂️ Added more file types for recognizing
+- 🌳 Now you can run a File Tree with "tree"
+- 🧮 Added new calculator function: "calc <expression>" instead of eval
 - 🔧 Other system improvements and minor changes
  
 
