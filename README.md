@@ -3,7 +3,7 @@ Official Q-J-R Open-Source Free Software repository
 
 ## Q-J-R System Integrated Operating Shell (IOSH) is fully Free and Open-Source Cross-Platform Software that gives you the same workflow and productive Console (Command Line) functionality on different OSes. It includes custom File-Work Utilities, Compilers, Linkers, UNIX Toolchain Tools, User Hierarchy, File System, Execution Formats, Full Q-J-R Intergration, Security Features and OS integration. It works with "zero-dependencies" technology: "Run & Use".
 
-### Plans:
+### Future Plans:
 
 - 🔋 Add battery percentage info (for laptops/computers/portable computers with connected battery) ✅ done
 - 📝 NEW NOTES: Stickies app!
@@ -16,6 +16,7 @@ Official Q-J-R Open-Source Free Software repository
 - 🖊️ Update text editor to more advanced one
 - 🗒️ Add advanced log control ✅ done
 - ✔️ Add 'log list' command to get log list from {home}/db/logs (only logs)
+- 🔧 Add QJRdebug: get_time(), rec_log(), debug_msg(), runtime_note(), debug_warning(), debug_log(), get_data()
 
 #### Releases:
  
