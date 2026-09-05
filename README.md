@@ -52,10 +52,11 @@ To run QJR System you need Python 3.7 or higher.
 
 #### Release notes:
 
-## 6.9.0 (Developer Beta 1 (2026-09-04))
+## 6.9.0 (Developer Beta 2 (2026-09-05))
 
 - ↔️ Added possibility to merge files ("merge "<filename_1>" "<filename_2>"" => then: enter the target of marked filename)
 - 🧮 Added possibility to count characters, lines, words in a file
+- 🔌 Added possibility to manage your hostname (details: hostname help)
 
 ## 6.8.0 (2026-09-04)
 
