@@ -29,7 +29,7 @@ Official Q-J-R Open-Source Free Software repository
 ----------------------------------------------------------------------------
 |       Latest        | Stable  | Last supported | Modified and remastered |
 |---------------------|---------|----------------|-------------------------|
-|   6.9.0 Dev Beta 2  |  6.8.0  |     1.0.0      |         1.5.2           |  
+|        6.9.0        |  6.9.0  |     1.0.0      |         1.5.2           |  
 
 
 To run QJR System you need Python 3.7 or higher.
@@ -53,11 +53,13 @@ To run QJR System you need Python 3.7 or higher.
 
 #### Release notes:
 
-## 6.9.0 (Developer Beta 2 (2026-09-05))
+## 6.9.0 (2026-09-13)
 
 - ↔️ Added possibility to merge files ("merge "<filename_1>" "<filename_2>"" => then: enter the target of marked filename)
 - 🧮 Added possibility to count characters, lines, words in a file
 - 🔌 Added possibility to manage your hostname (details: hostname help)
+- ↪️ Added QJRbackup (details: qjrbackup help)
+- 🛠️ Fixed bugs with users and other components, applied minor changes
 
 ## 6.8.0 (2026-09-04)
 
