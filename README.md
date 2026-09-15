@@ -20,16 +20,17 @@ Official Q-J-R Open-Source Free Software repository
 
 #### Releases:
  
-6.9.0 - September, 2026   
 6.10.0 - October, 2026   
 6.11.0 - November, 2026   
 6.12.0 - December, 2026   
-6.13.0 - December, 2026    
+6.13.0 - December, 2026  
+
+7.0.0  - January, 2027   
 
 ----------------------------------------------------------------------------
 |       Latest        | Stable  | Last supported | Modified and remastered |
 |---------------------|---------|----------------|-------------------------|
-|        6.9.0        |  6.9.0  |     1.0.0      |         1.5.2           |  
+|        6.9.1        |  6.9.1  |     1.0.0      |         1.5.2           |  
 
 
 To run QJR System you need Python 3.7 or higher.
@@ -52,6 +53,12 @@ To run QJR System you need Python 3.7 or higher.
 15. Windows (died, last release: 5.11.2 (2025-11))
 
 #### Release notes:
+
+## 6.9.1 (2026-09-15)
+
+- ⏱️ Q-J-R System Now Has An Uptime
+- 🛠️ Fixed bugs with Home DB Loading (Especially: **KeyError**)
+- 🔄 Updated a neofetch
 
 ## 6.9.0 (2026-09-13)
 
