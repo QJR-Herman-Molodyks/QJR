@@ -57,7 +57,7 @@ To run QJR System you need Python 3.7 or higher.
 ## 6.9.2 (2026-09-19)
 
 - 🛠️ Fixed errors with different OS Path styles
-- 📁 Tiny FS edits
+- 📁 Tiny FS edits (system/db/version)
 
 ## 6.9.1 (2026-09-15)
 
