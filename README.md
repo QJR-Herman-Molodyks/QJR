@@ -54,6 +54,11 @@ To run QJR System you need Python 3.7 or higher.
 
 #### Release notes:
 
+## 6.9.2 (2026-09-19)
+
+- 🛠️ Fixed errors with different OS Path styles
+- 📁 Tiny FS edits
+
 ## 6.9.1 (2026-09-15)
 
 - ⏱️ Q-J-R System Now Has An Uptime
