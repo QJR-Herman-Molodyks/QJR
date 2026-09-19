@@ -30,7 +30,7 @@ Official Q-J-R Open-Source Free Software repository
 ----------------------------------------------------------------------------
 |       Latest        | Stable  | Last supported | Modified and remastered |
 |---------------------|---------|----------------|-------------------------|
-|        6.9.1        |  6.9.1  |     1.0.0      |         1.5.2           |  
+|        6.9.2        |  6.9.2  |     1.0.0      |         1.5.2           |  
 
 
 To run QJR System you need Python 3.7 or higher.
