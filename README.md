@@ -17,6 +17,7 @@ Official Q-J-R Open-Source Free Software repository
 - 🗒️ Add advanced log control ✅ done
 - ✔️ Add 'log list' command to get log list from {home}/db/logs (only logs)
 - 🔧 Add QJRdebug: get_time(), rec_log(), debug_msg(), runtime_note(), debug_warning(), debug_log(), get_data()
+- ⚙️ Integrate QJRsphere
 
 #### Releases:
  
