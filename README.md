@@ -31,7 +31,7 @@ Official Q-J-R Open-Source Free Software repository
 ----------------------------------------------------------------------------
 |       Latest        | Stable  | Last supported | Modified and remastered |
 |---------------------|---------|----------------|-------------------------|
-|        6.9.2        |  6.9.2  |     1.0.0      |         1.5.2           |  
+|        6.9.3 RC     |  6.9.2  |     1.0.0      |         1.5.2           |  
 
 
 To run QJR System you need Python 3.7 or higher.
@@ -54,6 +54,12 @@ To run QJR System you need Python 3.7 or higher.
 15. Windows (died, last release: 5.11.2 (2025-11))
 
 #### Release notes:
+
+## 6.9.3 (2026-09-20)
+
+- 📊 Updated QJRsystemMonitor: Fixed CPU percentage Exceptions and Behavior
+- 🔨 Updated ConHost: Changed System Monitor command: "system monitor" -> "sysmon"
+- 🔴 Enabled Error Text Messages Back On
 
 ## 6.9.2 (2026-09-19)
 
