@@ -13,11 +13,19 @@ Official Q-J-R Open-Source Free Software repository
 - 📄 Open / edit files with the selected encoding (using: read <filename> <encoding>, if <encoding> is None: <ecncoding> = UTF-8) ✅ done
 - 🧮 Add feature to count characters, words, line in files (✅ done in new Beta Version of v6.9.0)
 - ↔️ Add file merge feature (✅ done in new Beta Version of v.6.9.0)
-- 🖊️ Update text editor to more advanced one
+- 🖊️ Update text editor to the more advanced one
 - 🗒️ Add advanced log control ✅ done
 - ✔️ Add 'log list' command to get log list from {home}/db/logs (only logs)
 - 🔧 Add QJRdebug: get_time(), rec_log(), debug_msg(), runtime_note(), debug_warning(), debug_log(), get_data()
 - ⚙️ Integrate QJRsphere
+- Update QJRas, QJRcc, QJRld and QJRmake
+- Add real Binary working features (.qjrbin, .bin, etc.)
+- Update .qjrexc, .qjrelf
+- Add new command list look ('help' command)
+
+### Repository global update with Q-J-R System v6.10.0
+
+Repository Sources and Files will be completely updated and changed. It's going to be a Q-J-R System v6.10 File System.
 
 #### Releases:
  
@@ -27,6 +35,7 @@ Official Q-J-R Open-Source Free Software repository
 6.13.0 - December, 2026  
 
 7.0.0  - January, 2027   
+7.1.0  - February, 2027
 
 ----------------------------------------------------------------------------
 |       Latest        | Stable  | Last supported | Modified and remastered |
