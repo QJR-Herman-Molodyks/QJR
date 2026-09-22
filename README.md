@@ -42,7 +42,7 @@ Repository Sources and Files will be completely updated and changed. It's going 
 ----------------------------------------------------------------------------
 |       Latest        | Stable  | Last supported | Modified and remastered |
 |---------------------|---------|----------------|-------------------------|
-|        6.9.3        |  6.9.3  |     1.0.0      |         1.5.2           |  
+|  6.10.0 Dev Beta 1  |  6.9.3  |     1.0.0      |         1.5.2           |  
 
 
 To run QJR System you need Python 3.7 or higher.
@@ -65,6 +65,11 @@ To run QJR System you need Python 3.7 or higher.
 15. Windows (died, last release: 5.11.2 (2025-11))
 
 #### Release notes:
+
+## 6.10.0 Developer Beta 1 (2026-09-22)
+
+- ⚙️ Added QJRsphere Integration (More: QJRsphere help)
+- 🛠️ Other minor changes
 
 ## 6.9.3 (2026-09-20)
 
