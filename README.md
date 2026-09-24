@@ -66,11 +66,12 @@ To run QJR System you need Python 3.7 or higher.
 
 #### Release notes:
 
-## 6.10.0 Developer Beta 2 (2026-09-24)
+## 6.10.0 Public Beta 1 (2026-09-24)
 
 - ⚙️ Added QJRsphere Integration (More: QJRsphere help)
 - 🖥️ Added QJRsphere Console
 - 🔧 Added QJRdebug System
+- 📝 Updated notepad version: v2.0 -> v2.2
 - 🛠️ Other minor changes
 
 ## 6.9.3 (2026-09-20)
