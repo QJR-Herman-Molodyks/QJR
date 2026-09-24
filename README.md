@@ -13,13 +13,13 @@ Official Q-J-R Open-Source Free Software repository
 - 🛠️ New tab 'apps' with new apps and utilities! ✅ done
 - 🕹️ Use a console history with arrow keys!
 - 📄 Open / edit files with the selected encoding (using: read <filename> <encoding>, if <encoding> is None: <ecncoding> = UTF-8) ✅ done
-- 🧮 Add feature to count characters, words, line in files (✅ done in new Beta Version of v6.9.0)
-- ↔️ Add file merge feature (✅ done in new Beta Version of v.6.9.0)
+- 🧮 Add feature to count characters, words, line in files ✅ done
+- ↔️ Add file merge feature ✅ done
 - 🖊️ Update text editor to the more advanced one
 - 🗒️ Add advanced log control ✅ done
 - ✔️ Add 'log list' command to get log list from {home}/db/logs (only logs)
-- 🔧 Add QJRdebug: get_time(), rec_log(), debug_msg(), runtime_note(), debug_warning(), debug_log(), get_data()
-- ⚙️ Integrate QJRsphere
+- 🔧 Add QJRdebug: get_time(), rec_log(), debug_msg(), runtime_note(), debug_warning(), debug_log(), get_data() ✅ done
+- ⚙️ Integrate QJRsphere ✅ done
 - Update QJRas, QJRcc, QJRld and QJRmake
 - Add real Binary working features (.qjrbin, .bin, etc.)
 - Update .qjrexc, .qjrelf
@@ -42,7 +42,7 @@ Repository Sources and Files will be completely updated and changed. It's going 
 ----------------------------------------------------------------------------
 |       Latest        | Stable  | Last supported | Modified and remastered |
 |---------------------|---------|----------------|-------------------------|
-|  6.10.0 Dev Beta 1  |  6.9.3  |     1.0.0      |         1.5.2           |  
+|6.10.0 Public Beta 1 |  6.9.3  |     1.0.0      |         1.5.2           |  
 
 
 To run QJR System you need Python 3.7 or higher.
@@ -66,9 +66,11 @@ To run QJR System you need Python 3.7 or higher.
 
 #### Release notes:
 
-## 6.10.0 Developer Beta 1 (2026-09-22)
+## 6.10.0 Developer Beta 2 (2026-09-24)
 
 - ⚙️ Added QJRsphere Integration (More: QJRsphere help)
+- 🖥️ Added QJRsphere Console
+- 🔧 Added QJRdebug System
 - 🛠️ Other minor changes
 
 ## 6.9.3 (2026-09-20)
