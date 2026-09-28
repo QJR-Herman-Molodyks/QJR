@@ -5,7 +5,7 @@ Official Q-J-R Open-Source Free Software repository
 
 ![qjrsys_image](qjr-new-6-10-0.png)
 
-### Future Plans:
+### Future Plans and Ideas:
 
 - 🔋 Add battery percentage info (for laptops/computers/portable computers with connected battery) ✅ done
 - 📝 NEW NOTES: Stickies app!
@@ -24,6 +24,7 @@ Official Q-J-R Open-Source Free Software repository
 - Add real Binary working features (.qjrbin, .bin, etc.)
 - Update .qjrexc, .qjrelf
 - Add new command list look ('help' command)
+- Add features for a conhost configuration.
 
 ### Repository global update with Q-J-R System v6.10.0
 
