@@ -43,7 +43,7 @@ Repository Sources and Files will be completely updated and changed. It's going 
 ----------------------------------------------------------------------------
 |       Latest        | Stable  | Last supported | Modified and remastered |
 |---------------------|---------|----------------|-------------------------|
-|6.10.0 Public Beta 1 |  6.9.3  |     1.0.0      |         1.5.2           |  
+|6.10.0 Pre-Release 1 |  6.9.3  |     1.0.0      |         1.5.2           |  
 
 
 To run QJR System you need Python 3.7 or higher.
@@ -67,12 +67,13 @@ To run QJR System you need Python 3.7 or higher.
 
 #### Release notes:
 
-## 6.10.0 Public Beta 1 (2026-09-24)
+## 6.10.0 Pre-Release 1 (2026-09-29)
 
 - ⚙️ Added QJRsphere Integration (More: QJRsphere help)
 - 🖥️ Added QJRsphere Console
 - 🔧 Added QJRdebug System
 - 📝 Updated notepad version: v2.0 -> v2.2
+- 🛡️ Added Security from modifying QJRsphere DBs
 - 🛠️ Other minor changes
 
 ## 6.9.3 (2026-09-20)
