@@ -17,7 +17,7 @@ Official Q-J-R Open-Source Free Software repository
 - ↔️ Add file merge feature ✅ done
 - 🖊️ Update text editor to the more advanced one
 - 🗒️ Add advanced log control ✅ done
-- ✔️ Add 'log list' command to get log list from {home}/db/logs (only logs)
+- ✔️ Add 'log list' command to get log list from {home}/db/logs (only logs) (we've made even MORE ADVANCED this command, btw) ✅ done
 - 🔧 Add QJRdebug: get_time(), rec_log(), debug_msg(), runtime_note(), debug_warning(), debug_log(), get_data() ✅ done
 - ⚙️ Integrate QJRsphere ✅ done
 - Update QJRas, QJRcc, QJRld and QJRmake
@@ -43,7 +43,7 @@ Repository Sources and Files will be completely updated and changed. It's going 
 ----------------------------------------------------------------------------
 |       Latest        | Stable  | Last supported | Modified and remastered |
 |---------------------|---------|----------------|-------------------------|
-|6.10.0 Pre-Release 1 |  6.9.3  |     1.0.0      |         1.5.2           |  
+|       6.10.0 RC     |  6.9.3  |     1.0.0      |         1.5.2           |  
 
 
 To run QJR System you need Python 3.7 or higher.
@@ -67,13 +67,15 @@ To run QJR System you need Python 3.7 or higher.
 
 #### Release notes:
 
-## 6.10.0 Pre-Release 1 (2026-09-29)
+## 6.10.0 RC (2026-09-30)
 
 - ⚙️ Added QJRsphere Integration (More: QJRsphere help)
 - 🖥️ Added QJRsphere Console
 - 🔧 Added QJRdebug System
-- 📝 Updated notepad version: v2.0 -> v2.2
+- 📝 Updated a notepad version: v2.0 -> v2.2
 - 🛡️ Added Security from modifying QJRsphere DBs
+- 🔨 Fixed problems with a status emojis in a Logging System
+- 🔄 Updated QJRlog: Added new argument: list (to view the log list in a directory), usage -> 'log list <path>' or 'log list', also changed from 'log open <log>' to 'log read <log>'
 - 🛠️ Other minor changes
 
 ## 6.9.3 (2026-09-20)
