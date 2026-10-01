@@ -1,0 +1,13 @@
+
+int x = 5
+bool y = true
+str txt = "Hello, World!!!"
+
+print "Hi!"
+print txt
+
+print x
+print y
+
+scanf name
+print name

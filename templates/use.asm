@@ -1,0 +1,2 @@
+MOV AX, BX
+OUT AX

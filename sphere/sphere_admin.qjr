@@ -1,0 +1,16 @@
+{
+    "bed": {
+        "dimensions_x": 1.0,
+        "dimensions_y": 1.0,
+        "dimensions_z": 1.0,
+        "is_external": true,
+        "using": false
+    },
+    "table": {
+        "dimensions_x": 1.0,
+        "dimensions_y": 1.0,
+        "dimensions_z": 1.0,
+        "is_external": true,
+        "using": false
+    }
+}

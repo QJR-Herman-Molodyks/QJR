@@ -1,0 +1,28 @@
+MOV ax, 1
+MOV bx, 1
+
+XCHG ax, bx
+
+STORE 1, AX
+LOAD CX, 1
+
+ADD AX, 5
+MOV DX, 4
+
+ADD AX, 12
+
+SUB AX, 54
+
+MUL AX
+DIV AX
+
+INC AX
+OUT AX
+
+DEC AX
+OUT AX
+
+MOV BX, 4
+
+CMP BX, DX
+HLT

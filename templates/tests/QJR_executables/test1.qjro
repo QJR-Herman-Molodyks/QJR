@@ -1,0 +1,9 @@
+03 x = 5
+04 y = true
+05 txt = "Hello, World!!!"
+01 "Hi!"
+01 txt
+01 x
+01 y
+02 name
+01 name

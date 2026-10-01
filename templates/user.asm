@@ -1,0 +1,7 @@
+
+MOV AX, 5
+OUT AX
+
+XCHG AX, BX
+OUT AX
+OUT BX

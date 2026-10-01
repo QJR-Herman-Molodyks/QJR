@@ -41,9 +41,9 @@ Repository Sources and Files will be completely updated and changed. It's going 
 7.1.0  - February, 2027
 
 ----------------------------------------------------------------------------
-|       Latest        | Stable  | Last supported | Modified and remastered |
-|---------------------|---------|----------------|-------------------------|
-|       6.10.0 RC     |  6.9.3  |     1.0.0      |         1.5.2           |  
+| Latest | Stable | Last supported | Modified and remastered |
+|--------|--------|----------------|-------------------------|
+| 6.10.0 | 6.10.0 |     1.0.0      |         1.5.2           |  
 
 
 To run QJR System you need Python 3.7 or higher.
@@ -67,7 +67,7 @@ To run QJR System you need Python 3.7 or higher.
 
 #### Release notes:
 
-## 6.10.0 RC (2026-09-30)
+## 6.10.0 (2026-10-01)
 
 - ⚙️ Added QJRsphere Integration (More: QJRsphere help)
 - 🖥️ Added QJRsphere Console
@@ -76,6 +76,7 @@ To run QJR System you need Python 3.7 or higher.
 - 🛡️ Added Security from modifying QJRsphere DBs
 - 🔨 Fixed problems with a status emojis in a Logging System
 - 🔄 Updated QJRlog: Added new argument: list (to view the log list in a directory), usage -> 'log list <path>' or 'log list', also changed from 'log open <log>' to 'log read <log>'
+- 📁 Minor file system updates
 - 🛠️ Other minor changes
 
 ## 6.9.3 (2026-09-20)

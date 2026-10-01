@@ -1,0 +1,27 @@
+Before you will launch this program, you should read this instruction:
+
+In other case you will have a problems with this app!
+
+Before executing:
+    Check on your device apps:
+        - Python3 (3.9 or higher)
+        - Git
+
+    Make sure, that you have installed modules such as:
+        - platform
+        - getpass
+        - datetime
+        - time
+        - socket
+
+*--------------- GLOBAL INFORMATION ----------------*
+
+Installed external libraries by default:
+    - psutil 5.9.0
+
+
+If everything is ok:
+    Execute the system in ./system/conhost.py
+
+If not:
+    You can tell us about this on our GitHub.
