@@ -108,7 +108,6 @@ def goto(row, column):
 # global QJRsphere_var
 # QJRsphere_var = QJRsphere_Init_Err()
 
-
 with open(db_helpfile, "r") as file:
     mode__ = file.read()
     if mode__ == "True":
@@ -125,7 +124,7 @@ with open(db_helpfile, "r") as file:
                     ["run", "calc", "scal", "calendar", "cal-config", "randomizer", "encryptor", "dt-format", "cycle",
                      "timeclock", "howmanydays", "howmuchtimepassed", "hash"],
                     " - ⚙️INTERACT WITH SYSTEM:",
-                    ["arch", "update", "update-external-system", "break", "echo", "dir", "delay"],
+                    ["arch", "update", "update-external-system", "break", "echo", "dir", "delay", "history"],
                     " - 🌏 INTERNET COMMANDS: ",
                     ["NOTE: Internet commands may require an Internet connection!", "ip", "hostname", "net-info",
                      "curl", "ping", "download", "netinfo", "port", "connect"],
@@ -163,7 +162,7 @@ with open(db_helpfile, "r") as file:
                     ["qjrbackup", "qjrsphere"],
                     " - 🔨APPS: ",
                     ["📟 console", "🛠️ apps", "⏰ clock", "📊 sysmon"],
-                    "Total commands: one hundred twenty seven (127)",
+                    "Total commands: one hundred twenty eight (128)",
                     "Any other command will be executed in a system shell"]
 
     else:
@@ -179,7 +178,7 @@ with open(db_helpfile, "r") as file:
                      "run", "calc", "scal", "calendar", "cal-config", "randomizer", "encryptor", "dt-format", "cycle",
                      "timeclock", "howmanydays", "howmuchtimepassed"],
                     [" - ⚙️INTERACT WITH SYSTEM       -> ",
-                     "arch", "update", "update-external-system", "break", "echo", "dir", "delay", "user"],
+                     "arch", "update", "update-external-system", "break", "echo", "dir", "delay", "history"],
                     [" - 🌏 INTERNET COMMANDS         -> ",
                      "NOTE: Internet command may require an Internet connection!", "ip", "hostname", "net-info",
                      "curl", "ping", "download", "netinfo", "port", "connect"],
@@ -199,11 +198,11 @@ with open(db_helpfile, "r") as file:
                      "factorial"],
                     [" - 🔨 Q-J-R INTERPRETERS        -> ", "qjrasm"],
                     [" - 📦 PACKAGE MANAGER           -> ", "qjrpkg"],
-                    [" - 👤 USER CONTROL (admin-only) -> ", "useradd", "deluser", "userlist", "passwd", "homelist", "changehome"],
+                    [" - 👤 USER CONTROL (admin-only) -> ", "user", "useradd", "deluser", "userlist", "passwd", "homelist", "changehome"],
                     [" - 🔗 Universal System Link     -> ", "(will be soon)"],
                     [" - 🚀 GLOBAL Q-J-R ECOSYSTEM    -> ", "qjrbackup", "qjrsphere"],
                     [" - 🔨APPS                       -> ", "📟 console", "🛠️ apps", "⏰ clock", "📊 sysmon"],
-                    "Total commands: one hundred twenty seven (127)",
+                    "Total commands: one hundred twenty eight (128)",
                     "Any other command will be executed in a system shell"]
 
 
@@ -280,9 +279,9 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 """
 
 # config
-qjr_ver = "6.10.0"
-ver = f"Q-J-R {qjr_ver} | Version code: 6.10.0-release"
-version = f"Q-J-R System {qjr_ver} - Released: 2026-10-01 | Copyright (c) 2019-2026 Q-J-R System Development - QJR TRUST 1.0 License"
+qjr_ver = "6.10.1"
+ver = f"Q-J-R {qjr_ver} | Version code: 6.10.1-release"
+version = f"Q-J-R System {qjr_ver} - Released: 2026-10-03 | Copyright (c) 2019-2026 Q-J-R System Development - QJR TRUST 1.0 License"
 apps = ["🛠️ apps", "📟 console", "⏰ clock", "📊 sysmon"]
 arch_lower = platform.machine().lower()
 
@@ -331,6 +330,8 @@ NON_FATAL_OSERRORS = {
 
 lib = [" > 🎥 Video", " > 📄 Documents", " > 🎆 Images", " > 🎧 Music"]
 
+global history
+history = []
 
 def welcome():
     print(ascii_qjr_large)
@@ -345,6 +346,7 @@ def console():
     global sudo_count, sudo_bantime, username
     while True:
         conhost = input(f"{'' if QJRsphere_var.return_active() is None else f'({QJRsphere_var.return_active()})'} \033[34m{os.getcwd()} | Q-J-R> \033[0m")
+        history.append(conhost)
 
         if conhost == "help":
             for command in commands:
@@ -1896,6 +1898,16 @@ QJRbackup search <path>       -- search for a Backup
 
         elif conhost == "QJRsphere":
             QJRsphere_var.ui()
+
+        # History
+
+        elif conhost == "history":
+            itera = 0
+            print("Command history:")
+            for elem in history:
+                itera += 1
+                print(f"{itera} | {elem}")
+            print(f"\nTotal -> {len(history)}")
 
 
         # SYS END
