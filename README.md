@@ -67,6 +67,10 @@ To run QJR System you need Python 3.7 or higher.
 
 #### Release notes:
 
+## 6.10.1 (2026-10-03)
+
+- 📰 Added 'history' command to view your previous commands list
+
 ## 6.10.0 (2026-10-01)
 
 - ⚙️ Added QJRsphere Integration (More: QJRsphere help)
