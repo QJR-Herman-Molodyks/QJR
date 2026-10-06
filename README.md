@@ -9,13 +9,13 @@ Official Q-J-R Open-Source Free Software repository
 
 - 🔋 Add battery percentage info (for laptops/computers/portable computers with connected battery) ✅ done
 - 📝 NEW NOTES: Stickies app!
-- 💡 Control everything better and get higher productivity with a dashboard app!
+- 💡 Control everything better and get higher productivity with a dashboard app! ✅ done
 - 🛠️ New tab 'apps' with new apps and utilities! ✅ done
 - 🕹️ Use a console history with arrow keys!
 - 📄 Open / edit files with the selected encoding (using: read <filename> <encoding>, if <encoding> is None: <ecncoding> = UTF-8) ✅ done
 - 🧮 Add feature to count characters, words, line in files ✅ done
 - ↔️ Add file merge feature ✅ done
-- 🖊️ Update text editor to the more advanced one
+- 🖊️ Update text editor to the more advanced one ✅ done
 - 🗒️ Add advanced log control ✅ done
 - ✔️ Add 'log list' command to get log list from {home}/db/logs (only logs) (we've made even MORE ADVANCED this command, btw) ✅ done
 - 🔧 Add QJRdebug: get_time(), rec_log(), debug_msg(), runtime_note(), debug_warning(), debug_log(), get_data() ✅ done
@@ -43,7 +43,7 @@ Repository Sources and Files will be completely updated and changed. It's going 
 ----------------------------------------------------------------------------
 | Latest | Stable | Last supported | Modified and remastered |
 |--------|--------|----------------|-------------------------|
-| 6.10.1 | 6.10.1 |     1.0.0      |         1.5.2           |  
+| 6.10.2 | 6.10.2 |     1.0.0      |         1.5.2           |  
 
 
 To run QJR System you need Python 3.7 or higher.
@@ -66,6 +66,11 @@ To run QJR System you need Python 3.7 or higher.
 15. Windows (died, last release: 5.11.2 (2025-11))
 
 #### Release notes:
+
+## 6.10.2 (2026-10-06)
+
+- 📊 Added QJRdashboard (running: dashboard)
+- 🛠️ FIX: Fixed preblems with an empty commands in history
 
 ## 6.10.1 (2026-10-03)
 
