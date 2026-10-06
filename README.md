@@ -69,7 +69,9 @@ To run QJR System you need Python 3.7 or higher.
 
 ## 6.10.2 (2026-10-06)
 
-- 📊 Added QJRdashboard (running: dashboard)
+- 📊 Added new component: QJRdashboard (running: dashboard)
+- 📊 Updated System Monitor to show Memory usage as a graphic line
+- 🔨 Changed default component version variables to constants
 - 🛠️ FIX: Fixed preblems with an empty commands in history
 
 ## 6.10.1 (2026-10-03)
