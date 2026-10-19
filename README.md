@@ -43,7 +43,7 @@ Repository Sources and Files will be completely updated and changed. It's going 
 ----------------------------------------------------------------------------
 | Latest | Stable | Last supported | Modified and remastered |
 |--------|--------|----------------|-------------------------|
-| 6.10.2 | 6.10.2 |     1.0.0      |         1.5.2           |  
+| 6.10.3 | 6.10.3 |     1.0.0      |         1.5.2           |  
 
 
 To run QJR System you need Python 3.7 or higher.
@@ -66,6 +66,11 @@ To run QJR System you need Python 3.7 or higher.
 15. Windows (died, last release: 5.11.2 (2025-11))
 
 #### Release notes:
+
+## 6.10.3 (2026-10-19)
+
+- 🖥️ Updated QJRas and QJRcc to v1.0.1: (QJRbinutils v1.0.1)
+- 🛠️ Minor changes
 
 ## 6.10.2 (2026-10-06)
 
