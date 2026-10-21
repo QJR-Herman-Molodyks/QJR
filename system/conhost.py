@@ -71,6 +71,8 @@ from QJRtools.QJRmake import *
 
 from QJRtools.QJRrun import QJRexc
 
+from dashboard import dashboard
+
 #
 class QJRsphere_Init_Err:
     def __init__(self):
@@ -161,8 +163,8 @@ with open(db_helpfile, "r") as file:
                     " - 🚀 GLOBAL Q-J-R ECOSYSTEM",
                     ["qjrbackup", "qjrsphere"],
                     " - 🔨APPS: ",
-                    ["📟 console", "🛠️ apps", "⏰ clock", "📊 sysmon"],
-                    "Total commands: one hundred twenty eight (128)",
+                    ["📟 console", "🛠️ apps", "⏰ clock", "📊 sysmon", "dashboard"],
+                    "Total commands: one hundred twenty nine (129)",
                     "Any other command will be executed in a system shell"]
 
     else:
@@ -201,8 +203,8 @@ with open(db_helpfile, "r") as file:
                     [" - 👤 USER CONTROL (admin-only) -> ", "user", "useradd", "deluser", "userlist", "passwd", "homelist", "changehome"],
                     [" - 🔗 Universal System Link     -> ", "(will be soon)"],
                     [" - 🚀 GLOBAL Q-J-R ECOSYSTEM    -> ", "qjrbackup", "qjrsphere"],
-                    [" - 🔨APPS                       -> ", "📟 console", "🛠️ apps", "⏰ clock", "📊 sysmon"],
-                    "Total commands: one hundred twenty eight (128)",
+                    [" - 🔨APPS                       -> ", "📟 console", "🛠️ apps", "⏰ clock", "📊 sysmon", "dashboard"],
+                    "Total commands: one hundred twenty nine (129)",
                     "Any other command will be executed in a system shell"]
 
 
@@ -279,31 +281,32 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 """
 
 # config
-qjr_ver = "6.10.1"
-ver = f"Q-J-R {qjr_ver} | Version code: 6.10.1-release"
-version = f"Q-J-R System {qjr_ver} - Released: 2026-10-03 | Copyright (c) 2019-2026 Q-J-R System Development - QJR TRUST 1.0 License"
+qjr_ver = "6.10.2"
+ver = f"Q-J-R {qjr_ver} | Version code: 6.10.2-release"
+version = f"Q-J-R System {qjr_ver} - Released: 2026-10-06 | Copyright (c) 2019-2026 Q-J-R System Development - QJR TRUST 1.0 License"
 apps = ["🛠️ apps", "📟 console", "⏰ clock", "📊 sysmon"]
 arch_lower = platform.machine().lower()
 
-ver_month = "v1.0.1"
-ver_time = "v1.0"
-ver_daypart = "v1.0"
-ver_week = "v1.1"
-ver_days = "v1.1"
-ver_calc = "v1.4.2"
-ver_calendar = "v1.0"
+VER_MONTH = "v1.0.1"
+VER_TIME = "v1.0"
+VER_DAYPART = "v1.0"
+VER_WEEK = "v1.1"
+VER_DAYS = "v1.1"
+VER_CALC = "v1.4.2"
+VER_CALENDAR = "v1.0"
 # system text editor version is on file_work.py
 with open(os.path.join("db", "version", "sys_edit_ver.qjr"), "r") as f: ver_system_editor = f.read()
 
-ver_gtn = "v1.5"
-ver_chvf = "v1.1"
-ver_clvf = "v1.0"
-ver_bin = "v1.5.2"
-ver_port = "v2.0.2"
-ver_uname = "v1.4.1"
-ver_howManyDays = "v1.0"
-ver_ddos = "v1.0.1"
-ver_sysmon = "v1.0.1"
+VER_GTN = "v1.5"
+VER_CHVF = "v1.1"
+VER_CLVF = "v1.0"
+VER_BIN = "v1.5.2"
+VER_PORT = "v2.0.2"
+VER_UNAME = "v1.4.1"
+VER_HOWMANYDAYS = "v1.0"
+VER_DDOS = "v1.0.1"
+VER_SYSMON = "v1.1"
+VER_DASHBOARD = "v1.0"
 
 # console information
 
@@ -346,7 +349,9 @@ def console():
     global sudo_count, sudo_bantime, username
     while True:
         conhost = input(f"{'' if QJRsphere_var.return_active() is None else f'({QJRsphere_var.return_active()})'} \033[34m{os.getcwd()} | Q-J-R> \033[0m")
-        history.append(conhost)
+
+        if len(conhost.split()) > 0:
+            history.append(conhost)
 
         if conhost == "help":
             for command in commands:
@@ -366,17 +371,17 @@ def console():
         elif conhost.startswith("#"): continue
 
         elif conhost == "bin":
-            print(f"\033[94m > Running bin.py -> {ver_bin}\033[0m")
+            print(f"\033[94m > Running bin.py -> {VER_BIN}\033[0m")
             run_bit()
 
         elif conhost == "month":
-            print(f"\033[94m > Running month.py -> {ver_month}\033[0m")
+            print(f"\033[94m > Running month.py -> {VER_MONTH}\033[0m")
             month_execute()
         elif conhost == "time":
-            print(f"\033[94m > Running time.py -> {ver_time}\033[0m")
+            print(f"\033[94m > Running time.py -> {VER_TIME}\033[0m")
             time_now()
         elif conhost == "daypart":
-            print(f"\033[94m > Running daypart.py -> {ver_daypart}\033[0m")
+            print(f"\033[94m > Running daypart.py -> {VER_DAYPART}\033[0m")
             daypart()
         elif conhost == "date":
             now = datetime.now()
@@ -412,16 +417,16 @@ hostname                       -- see your hostname
         elif conhost == "datetime":
             print(f"{datetime.now()}")
         elif conhost == "week":
-            print(f"\033[94m > Running week.py -> {ver_week}\033[0m")
+            print(f"\033[94m > Running week.py -> {VER_WEEK}\033[0m")
             mode()
         elif conhost == "days":
-            print(f"\033[94m > Running days.py -> {ver_days}\033[0m")
+            print(f"\033[94m > Running days.py -> {VER_DAYS}\033[0m")
             daymode()
         elif conhost == "calc":
-            print(f"\033[94m > Running calc_func.py -> {ver_calc}\033[0m")
+            print(f"\033[94m > Running calc_func.py -> {VER_CALC}\033[0m")
             calc_func()
         elif conhost == "calendar":
-            print(f"\033[94m > Running calendar_app.py -> {ver_calendar}\033[0m")
+            print(f"\033[94m > Running calendar_app.py -> {VER_CALENDAR}\033[0m")
             calendar_execute()
         elif conhost == "scal":
             year = int(input("Enter a year ->"))
@@ -745,7 +750,7 @@ hostname                       -- see your hostname
                 print()
 
         elif conhost == "port":
-            print(f"\033[94m > Running port.py: {ver_port}\033[0m")
+            print(f"\033[94m > Running port.py: {VER_PORT}\033[0m")
             print("'Port' is an utility for checking available ports on any website or IP-address")
             check_ports()
 
@@ -1069,11 +1074,11 @@ hostname                       -- see your hostname
         # --------------- SETTINGS ----------
 
         elif conhost == "cmd_help_view":
-            print(f"\033[94m > Running cmd_help_view_file.py - {ver_chvf}")
+            print(f"\033[94m > Running cmd_help_view_file.py - {VER_CHVF}")
             cmd_help_view_file()
 
         elif conhost == "cmd_ls_view":
-            print(f"\033[94m > Running cmd_ls_view_file.py - {ver_clvf}")
+            print(f"\033[94m > Running cmd_ls_view_file.py - {VER_CLVF}")
             cmd_list_view_file()
 
         elif conhost == "settings":
@@ -1086,10 +1091,10 @@ hostname                       -- see your hostname
                 # print()
                 select_set = input("Selection - Settings> ")
                 if select_set == "1":
-                    print(f"\033[94m > Running cmd_help_view_file.py - {ver_chvf}")
+                    print(f"\033[94m > Running cmd_help_view_file.py - {VER_CHVF}")
                     cmd_help_view_file()
                 elif select_set == "2":
-                    print(f"\033[94m > Running cmd_ls_view_file.py - {ver_clvf}")
+                    print(f"\033[94m > Running cmd_ls_view_file.py - {VER_CLVF}")
                     cmd_list_view_file()
                 elif select_set == "3":
                     print("Exiting settings...")
@@ -1123,7 +1128,7 @@ hostname                       -- see your hostname
             print(f"""
 Advanced Logging System:
     - list <path>
-    
+
     - read <log>
     - clear <log>
 
@@ -1159,7 +1164,7 @@ Advanced Logging System:
         # --------------- HOWMANYDAYS COMMAND --------------
 
         elif conhost == "howmanydays":
-            print(f"\033[94m > Running howmanydays.py: {ver_howManyDays}\033[0m")
+            print(f"\033[94m > Running howmanydays.py: {VER_HOWMANYDAYS}\033[0m")
             howmanydays()
 
         # --------- DELAY SYSTEM     --------
@@ -1226,7 +1231,7 @@ Advanced Logging System:
                       "      --help           display this help and exit")
 
             elif args == "--version":
-                print(f"uname version: {ver_uname}")
+                print(f"uname version: {VER_UNAME}")
 
             else:
                 print(f"\033[31mInvalid argument for 'uname': {args}\033[0m")
@@ -1241,7 +1246,7 @@ Advanced Logging System:
         # SIMULATION
 
         elif conhost == "ddos":
-            print(f"\033[94m > Running ddos_simu.py: {ver_ddos}\033[0m")
+            print(f"\033[94m > Running ddos_simu.py: {VER_DDOS}\033[0m")
             acception = input("This command will start a DDoS attack SIMULATION. Do you want to continue? [Y/n] $ ")
             if acception == "y" or acception == "Y":
                 pass
@@ -1423,7 +1428,7 @@ Advanced Logging System:
         # SYSTEM MONITOR
 
         elif conhost == "sysmon":
-            print(f"\033[94m > Running system_monitor.py: {ver_sysmon}\033[0m")
+            print(f"\033[94m > Running system_monitor.py: {VER_SYSMON}\033[0m")
             system_monitor()
 
         # QJRPKG
@@ -1908,6 +1913,12 @@ QJRbackup search <path>       -- search for a Backup
                 itera += 1
                 print(f"{itera} | {elem}")
             print(f"\nTotal -> {len(history)}")
+
+
+        # Dashboard
+
+        elif conhost == "dashboard":
+            dashboard()
 
 
         # SYS END
