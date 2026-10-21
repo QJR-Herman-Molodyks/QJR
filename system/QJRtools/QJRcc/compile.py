@@ -59,16 +59,20 @@ class QJRCCompiler:
     def compile_file(self, filename, compiled_filename):
         self.compiled_filename1 = compiled_filename
         # open("test.qjrc", "w").close()
-        with open(filename, "r", encoding="utf-8") as f:
-            for line in f:
-                self.compile(line.strip())
+        try:
+            with open(f"{compiled_filename}", "w") as dfile: pass # Overwrite compiled filename (goal)
 
-        with open(f"{compiled_filename}", "a") as self.file:
-            if compiled_filename.endswith(".qjro"):
-                pass
-            else:
-                self.file.write(f"FF\n")
+            with open(filename, "r", encoding="utf-8") as f:
+                for line in f:
+                    self.compile(line.strip())
 
+            with open(f"{compiled_filename}", "a") as self.file:
+                if compiled_filename.endswith(".qjro"):
+                    pass
+                else:
+                    self.file.write(f"FF\n")
+        except FileNotFoundError:
+            print(f"QJRcc -> No such file or directory -> {filename}")
 
 if __name__ == "__main__":
     if len(sys.argv) != 3 or not sys.argv[1].endswith(".qjrc"):

@@ -1,0 +1,9 @@
+
+# Versions
+
+QJRAS_VER = "v1.0.1"
+QJRCC_VER = "v1.0.1"
+QJRLD_VER = "v1.0"
+QJRMAKE_VER = "v1.0"
+
+QJRBINUTILS_VER = "v1.0.1"

@@ -115,7 +115,7 @@ with open(db_helpfile, "r") as file:
     if mode__ == "True":
         commands = [" - ⚙️BASIC INTERACT WITH SYSTEM: ",
                     ["help", "exit", "quit", "bin", "version", "restart", "return", "# <-- comment (ignores input)"],
-                    " - ⏰ DATE AND TIME:",
+                    " - ⏰ DATE AND TIME: ",
                     ["month", "date", "time", "daypart", "week", "days"],
                     " - 📁 WORK WITH FILES:", [
                         "cd", "ls", "pwd", "create", "delete", "read", "write", "echo", "info",
@@ -281,9 +281,9 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 """
 
 # config
-qjr_ver = "6.10.2"
-ver = f"Q-J-R {qjr_ver} | Version code: 6.10.2-release"
-version = f"Q-J-R System {qjr_ver} - Released: 2026-10-06 | Copyright (c) 2019-2026 Q-J-R System Development - QJR TRUST 1.0 License"
+qjr_ver = "6.10.3"
+ver = f"Q-J-R {qjr_ver} | Version code: 6.10.3-release"
+version = f"Q-J-R System {qjr_ver} - Released: 2026-10-13 | Copyright (c) 2019-2026 Q-J-R System Development - QJR TRUST 1.0 License"
 apps = ["🛠️ apps", "📟 console", "⏰ clock", "📊 sysmon"]
 arch_lower = platform.machine().lower()
 
@@ -343,7 +343,6 @@ def welcome():
     print()
 
 def clear_scopes(text): return text.replace('"', '')
-
 
 def console():
     global sudo_count, sudo_bantime, username
@@ -1343,8 +1342,8 @@ Advanced Logging System:
 
             battery = lib_psutil.sensors_battery()
             print(f"""
-\033[93m XXXX       XXXX     XXXX    \033[92m{username}\033[0m@\033[92mQ-J-R\033[0m
-\033[93mX    X         X    X    X   \033[0m----------
+\033[93m XXXX       XXXX     XXXX    \033[92m{username}\033[0m@\033[92m{globals.hostname}\033[0m
+\033[93mX    X         X    X    X   \033[0m{'-'*len(f"{username}@{globals.hostname}")}
 \033[93mX    X         X    XXXXX    \033[32mSystem: \033[0mQ-J-R System {qjr_ver} {platform.machine()}
 \033[93mX  X X    X    X    X  X     \033[32mHost: \033[0m{globals.hostname}
 \033[93m XXXX      XXXX     X   XX   \033[32mKernel: \033[0m{qjr_ver}
@@ -1659,11 +1658,12 @@ Usage example:
         elif conhost.startswith("qjras "):
             rest_str = conhost[6:].strip().split()
 
-            if len(rest_str) == 2:
+            if len(rest_str) == 3:
                 filename_to_compile = rest_str[0]
-                filename_compiled = rest_str[1]
+                operation_flag = rest_str[1]
+                filename_compiled = rest_str[2]
 
-                QJRas_compiler(filename_to_compile, filename_compiled)
+                QJRas_compiler(filename_to_compile, operation_flag, filename_compiled)
 
             elif len(rest_str) == 1:
                 flnm = rest_str[0]
@@ -1677,11 +1677,12 @@ Usage example:
         elif conhost.startswith("qjrcc "):
             rest_str = conhost[6:].strip().split()
 
-            if len(rest_str) == 2:
+            if len(rest_str) == 3:
                 filename_to_compile = rest_str[0]
-                filename_compiled = rest_str[1]
+                compilation_flag = rest_str[1]
+                filename_compiled = rest_str[2]
 
-                QJRcc_compile(filename_to_compile, filename_compiled)
+                QJRcc_compile(filename_to_compile, compilation_flag, filename_compiled)
 
             else:
                 QJRcc_error(f"Wrong arguments! Usage: QJRcc <filename> <output_filename>")

@@ -14,6 +14,13 @@ class QJRexc:
             "DX": 0,
         }
 
+        self.stack = {
+            "AX": [],
+            "BX": [],
+            "CX": [],
+            "DX": [],
+        }
+
         self.flags = {
             "ZF": False,
             "SF": False,
@@ -60,27 +67,28 @@ class QJRexc:
 
     def exec_cmd(self, line, line_count="<UNDEFINED>"):
         line = str(line)
-        if line.startswith("01"):
+        if line.startswith("01 "):
             args = line[3:].strip()
             self.out(args)
 
-        elif line.startswith("02"):
+        elif line.startswith("02 "):
             args = line[3:].strip()
             self.c_scanf(args)
 
-        elif line.startswith("03"):
+        elif line.startswith("03 "):
             args = line[3:].strip()
             self.c_int(args)
 
-        elif line.startswith("04"):
+        elif line.startswith("04 "):
             args = line[3:].strip()
             self.c_bool(args)
 
-        elif line.startswith("05"):
+        elif line.startswith("05 "):
             args = line[3:].strip()
             self.c_str(args)
 
-        elif line.startswith("0A"):
+        # MOV
+        elif line.startswith("0A "):
             try:
                 # parts = line.replace(",", "").split()
                 # parts = line.replace(",", "").upper().split()
@@ -105,7 +113,7 @@ class QJRexc:
                     self.QJRexcError(f"Indexation Error at line -> {line_count}")
 
 
-        elif line.startswith("0B"):
+        elif line.startswith("0B "):
             try:
                 parts = line.replace(",", "").upper().split()
 
@@ -121,7 +129,7 @@ class QJRexc:
                     self.QJRexcError(f"Indexation Error at line -> {line_count}")
 
 
-        elif line.startswith("0C"):
+        elif line.startswith("0C "):
             try:
                 parts = line.replace(",", "").upper().split()
 
@@ -138,7 +146,7 @@ class QJRexc:
                     self.QJRexcError(f"Indexation Error at line -> {line_count}")
 
 
-        elif line.startswith("0D"):
+        elif line.startswith("0D "):
             try:
                 parts = line.replace(",", "").upper().split()
 
@@ -155,7 +163,7 @@ class QJRexc:
                     self.QJRexcError(f"Indexation Error at line -> {line_count}")
 
 
-        elif line.startswith("0E"):
+        elif line.startswith("0E "):
             def_bits = line[5:].strip()
             self.asm_bits(def_bits)
 
@@ -164,7 +172,7 @@ class QJRexc:
             self.asm_hlt()
 
 
-        elif line.startswith("10"):
+        elif line.startswith("10 "):
             try:
                 parts = line.replace(",", "").upper().split()
 
@@ -180,25 +188,25 @@ class QJRexc:
             except IndexError:
                     self.QJRexcError(f"Indexation Error at line -> {line_count}")
 
-        elif line == "11":
+        elif line == "11 ":
             if self.asm_je():
                 self.out("1")
             else:
                 self.out("0")
 
-        elif line == "12":
+        elif line == "12 ":
             if self.asm_jne(): self.out("1")
             else: self.out("0")
 
-        elif line == "13":
+        elif line == "13 ":
             if self.asm_jg(): self.out("1")
             else: self.out("0")
 
-        elif line == "14":
+        elif line == "14 ":
             if self.asm_jl(): self.out("1")
             else: self.out("0")
 
-        elif line.startswith("1A"):
+        elif line.startswith("1A "):
             try:
                 parts = line.replace(",", "").upper().split()
 
@@ -214,7 +222,7 @@ class QJRexc:
             except IndexError:
                 self.QJRexcError(f"Indexation Error at line -> {line_count}")
 
-        elif line.startswith("1B"):
+        elif line.startswith("1B "):
             try:
                 parts = line.replace(",", "").upper().split()
 
@@ -231,7 +239,7 @@ class QJRexc:
                 self.QJRexcError(f"Indexation Error at line -> {line_count}")
 
 
-        elif line.startswith("1C"):
+        elif line.startswith("1C "):
             try:
                 parts = line.replace(",", "").upper().split()
 
@@ -247,7 +255,7 @@ class QJRexc:
                 self.QJRexcError(f"Indexation Error at line -> {line_count}")
 
 
-        elif line.startswith("1D"):
+        elif line.startswith("1D "):
             try:
                 parts = line.replace(",", "").upper().split()
 
@@ -263,7 +271,7 @@ class QJRexc:
                 self.QJRexcError(f"Indexation Error at line -> {line_count}")
 
 
-        elif line.startswith("1E"):
+        elif line.startswith("1E "):
             try:
                 parts = line.replace(",", "").upper().split()
 
@@ -279,7 +287,7 @@ class QJRexc:
                 self.QJRexcError(f"Indexation Error at line -> {line_count}")
 
 
-        elif line.startswith("1F"):
+        elif line.startswith("1F "):
             try:
                 parts = line.replace(",", "").upper().split()
 
@@ -294,10 +302,40 @@ class QJRexc:
             except IndexError:
                 self.QJRexcError(f"Indexation Error at line -> {line_count}")
 
-        elif line is None:
-            pass
 
-        elif line == "":
+        elif line.lower().startswith("15 "):
+            try:
+                parts = line.replace(",", "").upper().split()
+
+                if len(parts) == 2:
+                    reg = parts[1]
+                    self.asm_push(reg)
+
+                else:
+                    self.QJRasError(f"Expected 1 argument, got {len(parts)} instead!!! (Line -> {line_count})")
+            except IndexError:
+                self.QJRasError(f"Indexation Error at line -> {line_count}")
+
+        elif line.lower().startswith("16 "):
+            try:
+                parts = line.replace(",", "").upper().split()
+
+                if len(parts) == 2:
+                    reg = parts[1]
+                    self.asm_pop(reg)
+                else:
+                    self.QJRasError(f"Expected 1 argument, got {len(parts)} instead!!! (Line -> {line_count})")
+            except IndexError:
+                self.QJRasError(f"Indexation Error at line -> {line_count}")
+
+        elif line.lower() == "17":
+            self.asm_pusha()
+
+        elif line.lower() == "18":
+            self.asm_popa()
+
+
+        elif line == "" or line is None:
             pass
 
         else:
@@ -322,6 +360,7 @@ class QJRexc:
                 else:
                     try:
                         data = int(data)
+                        self.regs[reg] = data
                     except ValueError:
                         self.QJRexcError(f"{data} is not an integer and is not a valid register!!!")
 
@@ -532,6 +571,29 @@ class QJRexc:
                 # print(f"Bool: {self.boolvars}")
                 # print(f"Str: {self.strvars}")
                 self.QJRexcError(f"Invalid register, flag or variable: {args}!")
+
+    # STACK
+
+    def asm_push(self, reg):
+        if reg in self.regs.keys():
+            self.stack[reg].append(self.regs[reg])
+        else:
+            self.QJRexcError(f"Invalid register -> {reg}")
+
+    def asm_pop(self, reg):
+        if reg in self.regs.keys():
+            self.regs[reg] = self.stack[reg].pop()
+        else:
+            self.QJRexcError(f"Invalid register -> {reg}")
+
+
+    def asm_pusha(self):
+        for key in self.regs.keys():
+            self.stack[key] = self.regs[key]
+
+    def asm_popa(self):
+        for key in self.stack.keys():
+            self.regs[key] = self.stack[key]
 
     # RETURN
 

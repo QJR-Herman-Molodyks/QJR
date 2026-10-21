@@ -1,0 +1,38 @@
+0A AX "Hello, World!!!"
+01 ax
+15 AX
+0A AX "No"
+01 ax
+16 AX
+01 ax
+0A AX 5
+0A BX 3
+0A CX 1
+0A DX "Hello, World!!!"
+01 "AX: "
+01 ax
+01 "BX: "
+01 bx
+01 "CX: "
+01 cx
+01 "DX: "
+01 dx
+17
+0A AX 0
+0A BX 0
+0A CX 0
+0A DX 0
+01 ax
+01 bx
+01 cx
+01 dx
+18
+01 ax
+01 bx
+01 cx
+01 dx
+03 c = 5;
+01 c;
+04 var = true;
+01 var;
+FF

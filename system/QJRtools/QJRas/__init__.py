@@ -2,6 +2,8 @@
 from . import asm_interpreter
 from . import asm_compiler
 
+from ..QJRexception import QJRasCompilingError
+
 import sys
 
 # asm_formats = [".asm", ".s", ".qjras", ".qjrasm", ".ASM", ".S", ".QJRas", ".QJRasm"]
@@ -22,17 +24,26 @@ def QJRas_interpreter_JIT(filename):
     except Exception as e:
         QJRassembly.QJRasError(f"\033[31m{e}\033[0m")
 
-def QJRas_compiler(filename, compiled):
+def QJRas_compiler(filename, operation_flag, compiled):
+    # print("Define QJRassembly")
     QJRassembly = asm_compiler.ASM_Compiler()
-    print("Welcome to QJRas v1.0!")
+    print("Welcome to QJRas v1.0.1!")
     print(f"Trying to compile {filename}...")
 
     try:
-        QJRassembly.as_start_compiling(filename, compiled)
-        # print(f"\rCompiling... {line_num}", end="", flush=True)
+        if operation_flag == "-o":
+            QJRassembly.as_start_compiling(filename, compiled)
+            # print(f"\rCompiling... {line_num}", end="", flush=True)
+            print(f"\033[92mCompilation successful!!!\033[0m")
+        else:
+            QJRassembly.QJRasError(f"Invalid operation flag -> {operation_flag}, try again!\033[0m")
+
+    except QJRasCompilingError:
+        QJRassembly.QJRasError(f"The compilation is INCOMPLETE, because of some problems and errors.")
+        return
 
     except FileNotFoundError:
-        QJRassembly.QJRasError(f"\033[31mFile not found: {filename}, try again!\033[0m")
+        QJRassembly.QJRasError(f"File not found -> {filename}, try again!")
 
 def QJRas_REPL_mode():
     QJRassembly = asm_interpreter.QJRassembly()
@@ -66,7 +77,10 @@ if __name__ == "__main__":
                     line_num += 1
 
         except FileNotFoundError:
-            QJRassembly.QJRasError(f"\033[31mFile not found: {sys.argv[1]}, try again!\033[0m")
+            QJRassembly.QJRasError(f"File not found -> {sys.argv[1]}, try again!\033[0m")
+
+        except QJRasCompilingError:
+            QJRassembly.QJRasError(f"The compilation is INCOMPLETE, because of some problems and errors.")
 
         except Exception as e:
-            QJRassembly.QJRasError(f"\033[31m{e}\033[0m")
+            QJRassembly.QJRasError(e)

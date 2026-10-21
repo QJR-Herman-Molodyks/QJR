@@ -1,14 +1,17 @@
 import sys
 
 from .asm_interpreter import QJRassembly
+from ..QJRexception import QJRasCompilingError
 
 class ASM_Compiler:
     def __init__(self):
         self.QJRassembly = QJRassembly()
         self.normal_types = [".exc", ".qjrexc", ".qjro", ".qjrelf"]
+        self.errorCount = 0
 
     def QJRasError(self, msg):
         print(f"\033[31m[ QJRas ERROR ]: {msg}\033[0m")
+        errorCount += 1
 
     def save_name(self, filename):
         self.filename_compile = filename
@@ -29,7 +32,7 @@ class ASM_Compiler:
             if line.startswith("//"):
                 pass
 
-            elif line.upper().startswith("MOV"):
+            elif line.upper().startswith("MOV "):
                 parts = line.split(maxsplit=2)
                 if len(parts) == 3:
                     reg = parts[1].rstrip(",").upper()
@@ -39,7 +42,7 @@ class ASM_Compiler:
             elif line.upper() == "HLT":
                 self.write("FF\n")
 
-            elif line.upper().startswith("XCHG"):
+            elif line.upper().startswith("XCHG "):
                 try:
                     parts = line.replace(",", "").upper().split()
 
@@ -54,7 +57,7 @@ class ASM_Compiler:
                 except IndexError:
                     self.QJRasError(f"Indexation Error!")
 
-            elif line.upper().startswith("STORE"):
+            elif line.upper().startswith("STORE "):
                 try:
                     parts = line.replace(",", "").upper().split()
 
@@ -70,7 +73,7 @@ class ASM_Compiler:
                     self.QJRasError(f"Indexation Error!")
 
 
-            elif line.upper().startswith("LOAD"):
+            elif line.upper().startswith("LOAD "):
                 try:
                     parts = line.replace(",", "").upper().split()
 
@@ -85,14 +88,14 @@ class ASM_Compiler:
                 except IndexError:
                     self.QJRasError(f"Indexation Error!")
 
-            elif line.upper().startswith("BITS"):
+            elif line.upper().startswith("BITS "):
                 args = line[5:].strip()
 
                 self.write(f"0E {args}\n")
 
             elif line.upper() == "RET": self.write("0F\n")
 
-            elif line.upper().startswith("CMP"):
+            elif line.upper().startswith("CMP "):
                 try:
                     parts = line.replace(",", "").upper().split()
 
@@ -108,16 +111,16 @@ class ASM_Compiler:
                 except IndexError:
                     self.QJRasError(f"Indexation Error!")
 
-            elif line.upper().startswith("JE"): self.write(f"11\n")
-            elif line.upper().startswith("JNE"): self.write(f"12\n")
-            elif line.upper().startswith("JG"): self.write(f"13\n")
-            elif line.upper().startswith("JL"): self.write(f"14\n")
+            elif line.upper().startswith("JE "): self.write(f"11\n")
+            elif line.upper().startswith("JNE "): self.write(f"12\n")
+            elif line.upper().startswith("JG "): self.write(f"13\n")
+            elif line.upper().startswith("JL "): self.write(f"14\n")
 
-            elif line.upper().startswith("OUT"):
+            elif line.upper().startswith("OUT "):
                 args = line[4:].strip()
                 self.write(f"01 {args}\n")
 
-            elif line.upper().startswith("ADD"):
+            elif line.upper().startswith("ADD "):
                 try:
                     parts = line.replace(",", "").upper().split()
 
@@ -137,7 +140,7 @@ class ASM_Compiler:
                     self.QJRasError(f"Argument error. Number needed.")
 
 
-            elif line.upper().startswith("SUB"):
+            elif line.upper().startswith("SUB "):
                 try:
                     parts = line.replace(",", "").upper().split()
 
@@ -157,7 +160,7 @@ class ASM_Compiler:
                     self.QJRasError(f"Argument error. Number needed.")
 
 
-            elif line.upper().startswith("MUL"):
+            elif line.upper().startswith("MUL "):
                 try:
                     parts = line.replace(",", "").upper().split()
 
@@ -176,7 +179,7 @@ class ASM_Compiler:
                     self.QJRasError(f"Argument error. Number needed.")
 
 
-            elif line.upper().startswith("DIV"):
+            elif line.upper().startswith("DIV "):
                 try:
                     parts = line.replace(",", "").upper().split()
 
@@ -195,7 +198,7 @@ class ASM_Compiler:
                     self.QJRasError(f"Argument error. Number needed.")
 
 
-            elif line.upper().startswith("INC"):
+            elif line.upper().startswith("INC "):
                 try:
                     parts = line.replace(",", "").upper().split()
 
@@ -214,7 +217,7 @@ class ASM_Compiler:
                     self.QJRasError(f"Argument error. Number needed.")
 
 
-            elif line.upper().startswith("DEC"):
+            elif line.upper().startswith("DEC "):
                 try:
                     parts = line.replace(",", "").upper().split()
 
@@ -224,7 +227,7 @@ class ASM_Compiler:
                         self.write(f"1F {reg}\n")
 
                     else:
-                        self.QJRasError(f"Expected 2 arguments, got {len(parts)} instead!!!")
+                        self.QJRasError(f"Expected 1 argument, got {len(parts)} instead!!!")
 
                 except IndexError:
                     self.QJRasError(f"Indexation Error at line")
@@ -232,13 +235,45 @@ class ASM_Compiler:
                 except ValueError:
                     self.QJRasError(f"Argument error. Number needed.")
 
-            elif line.upper() == "":
-                pass
+            elif line.upper().startswith("PUSH "):
+                try:
+                    parts = line.replace(",", "").upper().split()
 
-            elif line is None:
-                pass
+                    if len(parts) == 2:
+                        reg = parts[1]
+                        self.write(f"15 {reg}\n")
 
-            elif len(line) == 0:
+                    else:
+                        self.QJRasError(f"Expected 1 argument, got {len(parts)} instead!!!")
+
+                except IndexError:
+                    self.QJRasError(f"Indexation Error at line")
+                except ValueError:
+                    self.QJRasError(f"Argument error. Number needed.")
+
+            elif line.upper().startswith("POP "):
+                try:
+                    parts = line.replace(",", "").upper().split()
+
+                    if len(parts) == 2:
+                        reg = parts[1]
+                        self.write(f"16 {reg}\n")
+
+                    else:
+                        self.QJRasError(f"Expected 1 argument, got {len(parts)} instead!!!")
+
+                except IndexError:
+                    self.QJRasError(f"Indexation Error at line")
+                except ValueError:
+                    self.QJRasError(f"Argument error. Number needed.")
+
+            elif line.upper() == "PUSHA":
+                self.write("17\n")
+
+            elif line.upper() == "POPA":
+                self.write("18\n")
+
+            elif line.upper().startswith(";") or line.upper().startswith("//") or line.upper().startswith("#") or line == "" or len(line.split()) == 0 or len(line) == 0 or line is None:
                 pass
 
             else:
@@ -246,16 +281,29 @@ class ASM_Compiler:
 
     def as_start_compiling(self, flnm, compiled_fnm):
         self.save_name(f"{compiled_fnm}")
-        with open(flnm, "r") as file:
-            f = file.readlines()
-            # count = 0
-            # line = f.strip()
-            for ln in f:
-                # count += 1
-                self.as_compile(ln, flnm)
+        try:
+            with open(flnm, "r") as file:
+                f = file.readlines()
+
+                with open(compiled_fnm, "w") as f_comp_clean: pass
+
+                # count = 0
+                # line = f.strip()
+                for ln in f:
+                    # count += 1
+                    self.as_compile(ln, flnm)
+
+                raise QJRasCompilingError("Errors")
+                if self.errorCount > 0:
+                    raise QJRasCompilingError("Errors")
+
+        except FileNotFoundError:
+            self.QJRasError(f"File not found -> '{flnm}'. Compilation failed!")
         # else:
         #     ASM_Compiler.QJRasError(f"Not enough arguments! ({sys.argv})")
-
+        except QJRasCompilingError:
+            self.QJRasError(f"The compilation is INCOMPLETE, because of some problems and errors.")
+            return
 
 if __name__ == "__main__":
     ASM_Compiler = ASM_Compiler()
@@ -270,11 +318,3 @@ if __name__ == "__main__":
                 ASM_Compiler.as_compile(ln, sys.argv[2])
     else:
         ASM_Compiler.QJRasError(f"Not enough arguments! ({sys.argv})")
-
-
-
-
-
-
-
-

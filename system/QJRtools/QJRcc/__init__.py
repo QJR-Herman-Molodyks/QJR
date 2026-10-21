@@ -4,9 +4,13 @@ from . import compile
 from . import error
 from . import interpreter
 
-def QJRcc_compile(filename, compiled_filename):
+def QJRcc_compile(filename, compilation_flag, compiled_filename):
     QJRCCompiler = compile.QJRCCompiler()
-    QJRCCompiler.compile_file(filename, compiled_filename)
+
+    if compilation_flag == "-o":
+        QJRCCompiler.compile_file(filename, compiled_filename)
+    else:
+        QJRcc_error(f"Unknown compilation flag -> {compilation_flag}")
 
 
 def QJRcc_interpreter(filename):

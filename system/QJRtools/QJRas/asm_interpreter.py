@@ -13,6 +13,13 @@ class QJRassembly:
             "DX": 0,
         }
 
+        self.stack = {
+            "AX": [],
+            "BX": [],
+            "CX": [],
+            "DX": [],
+        }
+
         self.flags = {
             "ZF": False,
             "SF": False,
@@ -45,7 +52,7 @@ class QJRassembly:
     # COMMAND INTERPRETER
 
     def exec_assembly(self, line, line_count="<UNDEFINED>"):
-        if line.lower().startswith("mov"):
+        if line.lower().startswith("mov "):
             try:
                 # parts = line.replace(",", "").split()
                 # parts = line.replace(",", "").upper().split()
@@ -72,7 +79,7 @@ class QJRassembly:
         elif line.lower() == "hlt":
             self.asm_hlt()
 
-        elif line.lower().startswith("xchg"):
+        elif line.lower().startswith("xchg "):
             try:
                 parts = line.replace(",", "").upper().split()
 
@@ -87,7 +94,7 @@ class QJRassembly:
             except IndexError:
                     self.QJRasError(f"Indexation Error at line -> {line_count}")
 
-        elif line.lower().startswith("store"):
+        elif line.lower().startswith("store "):
             try:
                 parts = line.replace(",", "").upper().split()
 
@@ -104,7 +111,7 @@ class QJRassembly:
                     self.QJRasError(f"Indexation Error at line -> {line_count}")
 
 
-        elif line.lower().startswith("load"):
+        elif line.lower().startswith("load "):
             try:
                 parts = line.replace(",", "").upper().split()
 
@@ -124,7 +131,7 @@ class QJRassembly:
             def_bits = line[5:].strip()
             self.asm_bits(def_bits)
 
-        elif line.lower().startswith("cmp"):
+        elif line.lower().startswith("cmp" ):
             try:
                 parts = line.replace(",", "").upper().split()
 
@@ -158,11 +165,11 @@ class QJRassembly:
             if self.asm_jl(): self.asm_out("1")
             else: self.asm_out("0")
 
-        elif line.lower().startswith("out"):
+        elif line.lower().startswith("out "):
             args = line[4:].strip()
             self.asm_out(args)
 
-        elif line.lower().startswith("add"):
+        elif line.lower().startswith("add "):
             try:
                 parts = line.replace(",", "").upper().split()
 
@@ -178,7 +185,7 @@ class QJRassembly:
             except IndexError:
                 self.QJRasError(f"Indexation Error at line -> {line_count}")
 
-        elif line.lower().startswith("sub"):
+        elif line.lower().startswith("sub "):
             try:
                 parts = line.replace(",", "").upper().split()
 
@@ -195,7 +202,7 @@ class QJRassembly:
                 self.QJRasError(f"Indexation Error at line -> {line_count}")
 
 
-        elif line.lower().startswith("mul"):
+        elif line.lower().startswith("mul "):
             try:
                 parts = line.replace(",", "").upper().split()
 
@@ -211,7 +218,7 @@ class QJRassembly:
                 self.QJRasError(f"Indexation Error at line -> {line_count}")
 
 
-        elif line.lower().startswith("div"):
+        elif line.lower().startswith("div "):
             try:
                 parts = line.replace(",", "").upper().split()
 
@@ -227,7 +234,7 @@ class QJRassembly:
                 self.QJRasError(f"Indexation Error at line -> {line_count}")
 
 
-        elif line.lower().startswith("inc"):
+        elif line.lower().startswith("inc "):
             try:
                 parts = line.replace(",", "").upper().split()
 
@@ -243,7 +250,7 @@ class QJRassembly:
                 self.QJRasError(f"Indexation Error at line -> {line_count}")
 
 
-        elif line.lower().startswith("dec"):
+        elif line.lower().startswith("dec "):
             try:
                 parts = line.replace(",", "").upper().split()
 
@@ -253,22 +260,49 @@ class QJRassembly:
                     self.asm_dec(reg)
 
                 else:
-                    self.QJRasError(f"Expected 1 argument, got {len(parts)} instead!!! (Line: {line_count})")
+                    self.QJRasError(f"Expected 1 argument, got {len(parts)} instead!!! (Line -> {line_count})")
 
             except IndexError:
                 self.QJRasError(f"Indexation Error at line -> {line_count}")
 
-        elif line.startswith("//"):
-            pass
+        # Stack
 
-        elif line is None:
-            pass
+        elif line.lower().startswith("push "):
+            try:
+                parts = line.replace(",", "").upper().split()
 
-        elif line == "":
+                if len(parts) == 2:
+                    reg = parts[1]
+                    self.asm_push(reg)
+
+                else:
+                    self.QJRasError(f"Expected 1 argument, got {len(parts)} instead!!! (Line -> {line_count})")
+            except IndexError:
+                self.QJRasError(f"Indexation Error at line -> {line_count}")
+
+        elif line.lower().startswith("pop "):
+            try:
+                parts = line.replace(",", "").upper().split()
+
+                if len(parts) == 2:
+                    reg = parts[1]
+                    self.asm_pop(reg)
+                else:
+                    self.QJRasError(f"Expected 1 argument, got {len(parts)} instead!!! (Line -> {line_count})")
+            except IndexError:
+                self.QJRasError(f"Indexation Error at line -> {line_count}")
+
+        elif line.lower() == "pusha":
+            self.asm_pusha()
+
+        elif line.lower() == "popa":
+            self.asm_popa()
+
+        elif line.startswith("//") or line.startswith(";") or line is None or line == "":
             pass
 
         else:
-            self.QJRasError(f"Command not recognized: {line} {line_count}")
+            self.QJRasError(f"Command not recognized -> {line} {line_count}")
 
     # COMMANDS
 
@@ -284,11 +318,12 @@ class QJRassembly:
                     # print(data)
                     # print(data[1:-1])
                     self.regs[reg] = data[1:-1]
-                elif data.startswith('"') and data.endswith('"'):
+                elif data.startswith("'") and data.endswith("'"):
                     self.regs[reg] = data[1:-1]
                 else:
                     try:
                         data = int(data)
+                        self.regs[reg] = data
                     except ValueError:
                         self.QJRasError(f"{data} is not an integer and is not a valid register!!!")
 
@@ -373,7 +408,7 @@ class QJRassembly:
             #     self.bits = 64
 
             else:
-                self.QJRasError(f"Sorry, but QJRas does not support {bits}-bit instructions. Update QJRas to the latest version or use only 16-bit instructions.")
+                self.QJRasError(f"Sorry, but QJRas does not support {bits}-bit instructions yet. Use only 16-bit instructions.")
 
         except ValueError:
             self.QJRasError(f"Target bits is not an integer!")
@@ -486,7 +521,30 @@ class QJRassembly:
             elif type(args) == int:
                 print(args)
             else:
-                self.QJRasError(f"Invalid register or flag: {args}!")
+                self.QJRasError(f"Invalid register or flag -> {args}!")
+
+    # STACK
+
+    def asm_push(self, reg):
+        if reg in self.regs.keys():
+            self.stack[reg].append(self.regs[reg])
+        else:
+            self.QJRasError(f"Invalid register -> {reg}")
+
+    def asm_pop(self, reg):
+        if reg in self.regs.keys():
+            self.regs[reg] = self.stack[reg].pop()
+        else:
+            self.QJRasError(f"Invalid register -> {reg}")
+
+
+    def asm_pusha(self):
+        for key in self.regs.keys():
+            self.stack[key] = self.regs[key]
+
+    def asm_popa(self):
+        for key in self.stack.keys():
+            self.regs[key] = self.stack[key]
 
     # RETURN
 
