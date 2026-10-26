@@ -67,6 +67,13 @@ To run QJR System you need Python 3.7 or higher.
 
 #### Release notes:
 
+## 6.11.0 Developer Beta 2 (2026-10-26)
+
+- ↙️ **Replace** - Added feature to replace some text in file to another (usage: replace "<filename>" "<text>" "<change_to>")
+- 🗜️ **Multiple files in a Zip** - Added feature to compress multiple files to 1 Zip-Archive (usage: zip "<archive_name>.zip" "<file_1>" "<file_2>" "<and_another_files_that_you_need>"
+- 📚 **Read Zip-Archives** - Added feature to read Zip-Archive content without extracting (usage: readzip <archive_name>.zip)
+- 🔗 **Add files to Zip-Archives** - Added feature to add files into an existing Zip-Archive without recompressing (usage: zipadd "<archive_name>.zip" "<filename_1>" "<filename_2>"
+
 ## 6.10.3 (2026-10-19)
 
 - 🖥️ Updated QJRas and QJRcc to v1.0.1: (QJRbinutils v1.0.1)
