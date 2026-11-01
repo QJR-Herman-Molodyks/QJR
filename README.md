@@ -31,8 +31,7 @@ Official Q-J-R Open-Source Free Software repository
 Repository Sources and Files will be completely updated and changed. It's going to be a Q-J-R System v6.10 File System.
 
 #### Releases:
- 
-6.11.0 - November, 2026   
+  
 6.12.0 - December, 2026   
 6.13.0 - December, 2026  
 
@@ -85,7 +84,7 @@ To run QJR System you need Python 3.7 or higher.
 - 📊 Added new component: QJRdashboard (running: dashboard)
 - 📊 Updated System Monitor to show Memory usage as a graphic line
 - 🔨 Changed default component version variables to constants
-- 🛠️ FIX: Fixed preblems with an empty commands in history
+- 🛠️ FIX: Fixed problems with an empty commands in history
 
 ## 6.10.1 (2026-10-03)
 
