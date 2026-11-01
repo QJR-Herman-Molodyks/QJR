@@ -41,9 +41,9 @@ Repository Sources and Files will be completely updated and changed. It's going 
 7.2.0  - February, 2027
 
 ----------------------------------------------------------------------------
-|         Latest       | Stable | Last supported | Modified and remastered |
-|----------------------|--------|----------------|-------------------------|
-| 6.11.0 Public Beta 1 | 6.10.3 |     1.0.0      |         1.5.2           |  
+| Latest | Stable | Last supported | Modified and remastered |
+|--------|--------|----------------|-------------------------|
+| 6.11.0 | 6.11.0 |     1.0.0      |         1.5.2           |  
 
 
 To run QJR System you need Python 3.7 or higher.
@@ -67,7 +67,7 @@ To run QJR System you need Python 3.7 or higher.
 
 #### Release notes:
 
-## 6.11.0 Public Beta 1 (2026-11-01)
+## 6.11.0 (2026-11-01)
 
 - ↙️ **Replace** - Added feature to replace some text in file to another (usage: replace "<filename>" "<text>" "<change_to>")
 - 🗜️ **Multiple files in a Zip** - Added feature to compress multiple files to 1 Zip-Archive (usage: zip "<archive_name>.zip" "<file_1>" "<file_2>" "<and_another_files_that_you_need>"
